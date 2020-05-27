@@ -78,7 +78,7 @@ export class HeaderComponent implements OnInit {
   SubCateg: Array<ISubCategory> = [];
   subBoolean: boolean = false;
   arrSubCateg: Array<IProduct> = [];
-  checkLoginPage: any = 'login';
+  checkLoginPage: any = 'login'
   singInStatus: boolean = false;
   singOutStatus: boolean = false;
   userId: string;
