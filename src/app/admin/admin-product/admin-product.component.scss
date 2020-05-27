@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.conteiner {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
+.main {
+  width: 75vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.inp_block {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 90%;
+  height: 100px;
+}
+
+.inp_block p {
+  color: black;
+  font-size: 20px;
+}
+
+.inp_admin_text {
+  font-size: 25px;
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border: solid 1px silver;
+  border-radius: 5px;
+}
+
+.inp_admin_btn {
+  width: 10vw;
+  height: 50px;
+  background-color: rgb(44, 43, 43);
+  color: white;
+  font-size: 20px;
+  border-radius: 3px;
+  border: solid rgb(44, 43, 43) 1px;
+  margin: 5px 5px;
+  transition: 0.3s;
+}
+
+.inp_admin_btn:hover {
+  background-color: white;
+  border: solid rgb(44, 43, 43) 1px;
+  color: rgb(44, 43, 43);
+}
+
+.admin_clothes_count {
+  width: 76vw;
+
+}
+
+.admin_table_clothes {
+  display: flex;
+
+  flex-direction: column;
+
+}
+
+.table_item th {
+  color: black;
+  font-size: 18px;
+  font-weight: 800;
+  width: 8vw;
+  // background-color: red
+}
+
+.table_item {
+  margin: 0 auto;
+  border-bottom: solid black 1px;
+}
+
+.table_item_body {
+  margin: 0 auto;
+}
+
+.table_item_body tr td {
+  text-align: center;
+  width: 9vw;
+}
+
+.admin_Btn {
+  font-size: 20px;
+  margin-top: 5px;
+  border: solid rgb(31, 30, 30) 1px;
+  border-radius: 4px;
+  width: 80%;
+  height: 40px;
+  color: whitesmoke;
+  background-color: rgb(31, 30, 30);
+}
+
+.sizeBlock {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 20px;
+
+  div {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  input {
+    margin-top: 5px;
+    margin-left: 5px;
+
+  }
+}
+.progres{
+  width: 100%;
+  height: 5vh;
+  border: solid;
+}
+.green{
+  background-color: green;
+}

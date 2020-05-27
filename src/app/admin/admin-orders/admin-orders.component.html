@@ -1,0 +1,34 @@
+<div class="conteiner">
+  <table class="admin_table_clothes">
+    <thead class="table_item">
+      <th>#</th>
+      <th>Total Price</th>
+      <th>USER ID</th>
+      <th>USER EMAIL</th>
+     
+      <th>Phone Number</th>
+      <th>City</th>
+      <th>Street</th>
+      <th>House</th>
+      <th>Delete</th>
+
+
+    </thead>
+    <tbody class="table_item_body">
+      <tr *ngFor="let item of arrAdminOrders; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{item.totalPrice}}</td>
+        <td>{{item.userID.id}}</td>
+        <td>{{item.userID.email}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.city}}</td>
+        <td>{{item.street}}</td>
+        <td>{{item.house}}</td>
+        <td>
+          <input type="button"  class="deleteOrder"  (click)="deleteOrder(item)" value="delete" id="">
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>

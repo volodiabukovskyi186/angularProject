@@ -1,0 +1,2287 @@
+{
+  "category": [
+    {
+      "id": 1,
+      "nameUA": "women",
+      "nameEN": "women"
+    },
+    {
+      "id": 2,
+      "nameUA": "men",
+      "nameEN": "men"
+    }
+  ],
+  "subcategory": [
+    {
+      "id": 1,
+      "subName": "T-shirt"
+    },
+    {
+      "id": 2,
+      "subName": "Jeans"
+    },
+    {
+      "id": 3,
+      "subName": "Jacket"
+    },
+    {
+      "id": 4,
+      "subName": "Underwear"
+    },
+    {
+      "id": 5,
+      "subName": "Sweaters"
+    },
+    {
+      "id": 6,
+      "subName": "Shorts"
+    },
+    {
+      "id": 7,
+      "subName": "Activewear"
+    },
+    {
+      "id": 8,
+      "subName": "Pants"
+    },
+    {
+      "id": 10,
+      "subName": "Wallet"
+    },
+    {
+      "id": 11,
+      "subName": "Belt"
+    },
+    {
+      "id": 12,
+      "subName": "Logo-shop"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "userId": "4L2j4EEcMYUvwhQegAwgr0ddvsy2",
+      "name": "volodia",
+      "phone": "0632313123",
+      "city": "lviv",
+      "street": "shevchenko",
+      "house": "1"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "totalPrice": 91,
+      "userName": "misha",
+      "phone": "1231313123",
+      "city": "lviv",
+      "street": "shevchenko",
+      "house": "82",
+      "userID": {
+        "id": "guest",
+        "email": "guest"
+      },
+      "userOrder": [
+        {
+          "id": 1,
+          "product": {
+            "id": 3,
+            "category": {
+              "id": 2,
+              "nameUA": "men",
+              "nameEN": "men"
+            },
+            "subcategory": {
+              "id": 2,
+              "subName": "Jeans"
+            },
+            "productPrice": 45.3,
+            "describe": "Skinny Fit Austin Dark Blue Jeans",
+            "color": "blue",
+            "size": {
+              "xs": true,
+              "s": false,
+              "m": true,
+              "l": true,
+              "xl": true,
+              "xxl": true
+            },
+            "sale": false,
+            "newCollection": true,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Faada396d-ae86-4d1d-9b29-418c081b4526.jpeg?alt=media&token=44bf2ae2-6822-44de-8241-bfb57b5380fc"
+          },
+          "productPrice": 45.3,
+          "orderSize": "l,m",
+          "count": 2
+        }
+      ],
+      "date": "2020-05-16T12:26:35.964Z"
+    },
+    {
+      "id": 2,
+      "totalPrice": 184,
+      "userName": "asda",
+      "phone": "3323123123",
+      "city": "ssss",
+      "street": "sssss",
+      "house": "1",
+      "userID": {
+        "id": "guest",
+        "email": "guest"
+      },
+      "userOrder": [
+        {
+          "id": 1,
+          "product": {
+            "id": 46,
+            "category": {
+              "id": 1,
+              "nameUA": "women",
+              "nameEN": "women"
+            },
+            "subcategory": {
+              "id": 6,
+              "subName": "Shorts"
+            },
+            "productPrice": 63.33,
+            "describe": "RAMIE BLEND CITRUS BELTED HIGH WAIST SHORTS",
+            "color": "yellow",
+            "size": {
+              "xs": true,
+              "s": true,
+              "m": true,
+              "l": true,
+              "xl": false,
+              "xxl": true
+            },
+            "sale": false,
+            "newCollection": true,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F1035c8d5-fec5-4502-9e0a-2dd2ca9761f5.jpeg?alt=media&token=f9da2016-d96c-4c12-93a9-5a59dc39f673"
+          },
+          "productPrice": 63.33,
+          "orderSize": "m",
+          "count": 1
+        },
+        {
+          "id": 2,
+          "product": {
+            "id": 37,
+            "category": {
+              "id": 1,
+              "nameUA": "women",
+              "nameEN": "women"
+            },
+            "subcategory": {
+              "id": 11,
+              "subName": "Belt"
+            },
+            "productPrice": 120.4,
+            "describe": "SOLID LYOCELL TIE WAIST HIGH RISE CROPPED PANTS",
+            "color": "orange",
+            "size": {
+              "xs": false,
+              "s": false,
+              "m": false,
+              "l": false,
+              "xl": false,
+              "xxl": false
+            },
+            "sale": false,
+            "newCollection": true,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F0f9ba95a-c84a-4151-ad72-6d7200353f71.jpeg?alt=media&token=fe8d8c4d-ce07-4f0d-9d96-5a36f7e04454"
+          },
+          "productPrice": 120.4,
+          "orderSize": "",
+          "count": 1
+        }
+      ],
+      "date": "2020-05-16T12:46:12.008Z"
+    },
+    {
+      "id": 3,
+      "totalPrice": 133,
+      "userName": "yulia",
+      "phone": "0631772312",
+      "city": "lviv",
+      "street": "shevchenko",
+      "house": "32",
+      "userID": {
+        "id": "4L2j4EEcMYUvwhQegAwgr0ddvsy2",
+        "email": "user@gmail.com"
+      },
+      "userOrder": [
+        {
+          "id": 1,
+          "product": {
+            "id": 30,
+            "category": {
+              "id": 1,
+              "nameUA": "women",
+              "nameEN": "women"
+            },
+            "subcategory": {
+              "id": 3,
+              "subName": "Jacket"
+            },
+            "productPrice": 77.3,
+            "describe": " Oversized Utility Denim Trucker Jacket ",
+            "color": "white",
+            "size": {
+              "xs": true,
+              "s": false,
+              "m": true,
+              "l": true,
+              "xl": true,
+              "xxl": false
+            },
+            "sale": false,
+            "newCollection": false,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fbe87df8d-36ce-42a1-8940-7a01003cd322.jpeg?alt=media&token=f7cfebdd-3dc3-4c27-880d-93c669e69a52"
+          },
+          "productPrice": 77.3,
+          "orderSize": "xs",
+          "count": 1
+        },
+        {
+          "id": 2,
+          "product": {
+            "id": 29,
+            "category": {
+              "id": 1,
+              "nameUA": "women",
+              "nameEN": "women"
+            },
+            "subcategory": {
+              "id": 2,
+              "subName": "Jeans"
+            },
+            "productPrice": 55.5,
+            "describe": "SKINNY FIT MID RISE GLACIER ANKLE JEANS",
+            "color": "blue",
+            "size": {
+              "xs": true,
+              "s": false,
+              "m": true,
+              "l": true,
+              "xl": true,
+              "xxl": true
+            },
+            "sale": false,
+            "newCollection": false,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F12399fc9-f3fa-4ffb-af94-8c772e7c5cd6.jpeg?alt=media&token=ecca4ad0-3870-4f54-be4d-ae1bca89f2ea"
+          },
+          "productPrice": 55.5,
+          "orderSize": "l",
+          "count": 1
+        }
+      ],
+      "date": "2020-05-18T10:08:45.259Z"
+    },
+    {
+      "id": 4,
+      "totalPrice": 185,
+      "userName": "misha",
+      "phone": "4230492342",
+      "city": "lviv",
+      "street": "shevchenko",
+      "house": "11",
+      "userID": {
+        "id": "guest",
+        "email": "guest"
+      },
+      "userOrder": [
+        {
+          "id": 1,
+          "product": {
+            "id": 29,
+            "category": {
+              "id": 1,
+              "nameUA": "women",
+              "nameEN": "women"
+            },
+            "subcategory": {
+              "id": 2,
+              "subName": "Jeans"
+            },
+            "productPrice": 55.5,
+            "describe": "SKINNY FIT MID RISE GLACIER ANKLE JEANS",
+            "color": "blue",
+            "size": {
+              "xs": true,
+              "s": false,
+              "m": true,
+              "l": true,
+              "xl": true,
+              "xxl": true
+            },
+            "sale": false,
+            "newCollection": false,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F12399fc9-f3fa-4ffb-af94-8c772e7c5cd6.jpeg?alt=media&token=ecca4ad0-3870-4f54-be4d-ae1bca89f2ea"
+          },
+          "productPrice": 55.5,
+          "orderSize": "l,l",
+          "count": 2
+        },
+        {
+          "id": 2,
+          "product": {
+            "id": 5,
+            "category": {
+              "id": 2,
+              "nameUA": "men",
+              "nameEN": "men"
+            },
+            "subcategory": {
+              "id": 1,
+              "subName": "T-shirt"
+            },
+            "productPrice": 28.99,
+            "describe": "Monogram Logo Crewneck T-Shirt",
+            "color": "orange",
+            "size": {
+              "xs": true,
+              "s": true,
+              "m": true,
+              "l": true,
+              "xl": false,
+              "xxl": false
+            },
+            "sale": false,
+            "newCollection": true,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F4020e0c7-5135-453d-a99b-44c0c44767c3.jpeg?alt=media&token=6fb5d124-972f-4a6d-b733-7e1a5d9552be"
+          },
+          "productPrice": 28.99,
+          "orderSize": "s",
+          "count": 1
+        },
+        {
+          "id": 3,
+          "product": {
+            "id": 3,
+            "category": {
+              "id": 2,
+              "nameUA": "men",
+              "nameEN": "men"
+            },
+            "subcategory": {
+              "id": 2,
+              "subName": "Jeans"
+            },
+            "productPrice": 45.3,
+            "describe": "Skinny Fit Austin Dark Blue Jeans",
+            "color": "blue",
+            "size": {
+              "xs": true,
+              "s": false,
+              "m": true,
+              "l": true,
+              "xl": true,
+              "xxl": true
+            },
+            "sale": false,
+            "newCollection": true,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Faada396d-ae86-4d1d-9b29-418c081b4526.jpeg?alt=media&token=44bf2ae2-6822-44de-8241-bfb57b5380fc"
+          },
+          "productPrice": 45.3,
+          "orderSize": "l",
+          "count": 1
+        }
+      ],
+      "date": "2020-05-20T14:37:20.441Z"
+    },
+    {
+      "id": 5,
+      "totalPrice": 29,
+      "userName": "volodia",
+      "phone": "0632313123",
+      "city": "lviv",
+      "street": "shevchenko",
+      "house": "1",
+      "userID": {
+        "id": "4L2j4EEcMYUvwhQegAwgr0ddvsy2",
+        "email": "user@gmail.com"
+      },
+      "userOrder": [
+        {
+          "id": 1,
+          "product": {
+            "id": 5,
+            "category": {
+              "id": 2,
+              "nameUA": "men",
+              "nameEN": "men"
+            },
+            "subcategory": {
+              "id": 1,
+              "subName": "T-shirt"
+            },
+            "productPrice": 28.99,
+            "describe": "Monogram Logo Crewneck T-Shirt",
+            "color": "orange",
+            "size": {
+              "xs": true,
+              "s": true,
+              "m": true,
+              "l": true,
+              "xl": false,
+              "xxl": false
+            },
+            "sale": false,
+            "newCollection": true,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F4020e0c7-5135-453d-a99b-44c0c44767c3.jpeg?alt=media&token=6fb5d124-972f-4a6d-b733-7e1a5d9552be"
+          },
+          "productPrice": 28.99,
+          "orderSize": "xs",
+          "count": 1
+        }
+      ],
+      "date": "2020-05-26T09:49:32.192Z"
+    },
+    {
+      "id": 6,
+      "totalPrice": 56,
+      "userName": "volodia",
+      "phone": "0632313123",
+      "city": "lviv",
+      "street": "shevchenko",
+      "house": "1",
+      "userID": {
+        "id": "4L2j4EEcMYUvwhQegAwgr0ddvsy2",
+        "email": "user@gmail.com"
+      },
+      "userOrder": [
+        {
+          "id": 1,
+          "product": {
+            "id": 29,
+            "category": {
+              "id": 1,
+              "nameUA": "women",
+              "nameEN": "women"
+            },
+            "subcategory": {
+              "id": 2,
+              "subName": "Jeans"
+            },
+            "productPrice": 55.5,
+            "describe": "SKINNY FIT MID RISE GLACIER ANKLE JEANS",
+            "color": "blue",
+            "size": {
+              "xs": true,
+              "s": false,
+              "m": true,
+              "l": true,
+              "xl": true,
+              "xxl": true
+            },
+            "sale": false,
+            "newCollection": false,
+            "saleProcent": 0,
+            "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F12399fc9-f3fa-4ffb-af94-8c772e7c5cd6.jpeg?alt=media&token=ecca4ad0-3870-4f54-be4d-ae1bca89f2ea"
+          },
+          "productPrice": 55.5,
+          "orderSize": "m",
+          "count": 1
+        }
+      ],
+      "date": "2020-05-26T11:10:31.300Z"
+    }
+  ],
+  "sales": [
+    {
+      "id": 1,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 29.99,
+      "describe": "Circular Monogram Logo Crewneck T-Shirt",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 10,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F58f8337f-2ed9-48a7-ae13-16a16494f20c.jpeg?alt=media&token=f417e9ad-541a-4478-8c01-923d9b463817"
+    },
+    {
+      "id": 6,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 18.99,
+      "describe": "Monogram Logo Crewneck T-Shirt",
+      "color": "pink",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 10,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fd9991aed-a1fd-4644-9310-d95466f63203.jpeg?alt=media&token=dd87dd21-360c-4611-9db5-df2537d894ba"
+    },
+    {
+      "id": 42,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 5,
+        "subName": "Sweaters"
+      },
+      "productPrice": 51.5,
+      "describe": "FOIL MONOGRAM LOGO CROPPED HOODIE",
+      "color": "red",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 20,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F7086e09b-0e72-41cf-8c5d-8fa834819c3c.jpeg?alt=media&token=eed122db-c7e8-4b32-84e7-70be6468cc57"
+    },
+    {
+      "id": 34,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 7,
+        "subName": "Activewear"
+      },
+      "productPrice": 35.99,
+      "describe": "PERFORMANCE ALLOVER GRAPHIC LOGO ROLL CUFF CROPPED T-SHIRT",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 30,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F5bf6df08-d3c3-4df0-a0d4-711636015ea6.jpeg?alt=media&token=3d9d25f4-0da2-4a7d-b754-0459aacf1f42"
+    },
+    {
+      "id": 13,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 12,
+        "subName": "Logo-shop"
+      },
+      "productPrice": 100.5,
+      "describe": "CK ONE LOGO GRAPHIC LONG SLEEVE HOODIE",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 25,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fff23d3e9-38b9-40cb-aad9-c406966169c9.jpeg?alt=media&token=65db2952-02c3-4383-9cd2-bd50f4c5bccb"
+    },
+    {
+      "id": 9,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 3,
+        "subName": "Jacket"
+      },
+      "productPrice": 85.5,
+      "describe": "STRIPED FULL ZIP BOMBER JACKET",
+      "color": "green",
+      "size": {
+        "xs": false,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 15,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F5fdbde1c-40aa-46ef-aef4-4dd3734a83aa.jpeg?alt=media&token=92209cc1-5e89-4af1-8544-75030f49d81a"
+    },
+    {
+      "id": 47,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 7,
+        "subName": "Activewear"
+      },
+      "productPrice": 85.5,
+      "describe": "PERFORMANCE HEATHERED LOGO MEDIUM IMPACT SPORTS BRA",
+      "color": "pink",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": false,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 10,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F54aca89a-d544-46b9-8ffa-156640d5ce79.jpeg?alt=media&token=836985b3-3662-4985-b045-3936c60d0b8a"
+    },
+    {
+      "id": 50,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 11,
+        "subName": "Belt"
+      },
+      "productPrice": 40.99,
+      "describe": "CK MONOGRAM OVAL BUCKLE BELT",
+      "color": "red",
+      "size": {
+        "xs": false,
+        "s": true,
+        "m": true,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 15,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F207ff0ea-aa56-4ee8-8517-a1a1b4f228c7.jpeg?alt=media&token=92066d73-28a8-4aa4-96ae-74d3e1842b19"
+    },
+    {
+      "id": 52,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 6,
+        "subName": "Shorts"
+      },
+      "productPrice": 60.99,
+      "describe": "SOLID LOGO 7\" VOLLEY SWIM SHORTS",
+      "color": "yellow",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": true,
+        "l": false,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 30,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F34b795bf-aa2c-40ae-86a1-3ce1e5a17df6.jpeg?alt=media&token=91702a1e-6acb-4551-8348-ee43c3cd5ab9"
+    },
+    {
+      "id": 26,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 6,
+        "subName": "Shorts"
+      },
+      "productPrice": 63.5,
+      "describe": "PRIDE LOGO DRAWSTRING SHORTS",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 40,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Ffd77dfd8-80a8-40e6-895d-d75702868667.jpeg?alt=media&token=dd875b6b-dddb-40ee-bfcc-168b6293f1a6"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 29.99,
+      "describe": "Circular Monogram Logo Crewneck T-Shirt",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 10,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F58f8337f-2ed9-48a7-ae13-16a16494f20c.jpeg?alt=media&token=f417e9ad-541a-4478-8c01-923d9b463817"
+    },
+    {
+      "id": 2,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 33.99,
+      "describe": "Circular Monogram Logo Crewneck T-Shirt",
+      "color": "red",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F8bb0d26b-a0f4-452b-8902-54ce0911850e.jpeg?alt=media&token=aebcfa72-3d1d-40c4-9c89-e9c8e09a67ad"
+    },
+    {
+      "id": 3,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 2,
+        "subName": "Jeans"
+      },
+      "productPrice": 45.3,
+      "describe": "Skinny Fit Austin Dark Blue Jeans",
+      "color": "blue",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Faada396d-ae86-4d1d-9b29-418c081b4526.jpeg?alt=media&token=44bf2ae2-6822-44de-8241-bfb57b5380fc"
+    },
+    {
+      "id": 4,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 5,
+        "subName": "Sweaters"
+      },
+      "productPrice": 45.3,
+      "describe": "Regular Fit Logo Supima Cotton Pullover Sweater",
+      "color": "blue",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fd8bcca02-1045-4a41-b76e-853146f81a54.jpeg?alt=media&token=7da8f78f-732b-4ed7-8c2d-ef56ec6bbe8c"
+    },
+    {
+      "id": 5,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 28.99,
+      "describe": "Monogram Logo Crewneck T-Shirt",
+      "color": "orange",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F4020e0c7-5135-453d-a99b-44c0c44767c3.jpeg?alt=media&token=6fb5d124-972f-4a6d-b733-7e1a5d9552be"
+    },
+    {
+      "id": 6,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 18.99,
+      "describe": "Monogram Logo Crewneck T-Shirt",
+      "color": "pink",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 10,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fd9991aed-a1fd-4644-9310-d95466f63203.jpeg?alt=media&token=dd87dd21-360c-4611-9db5-df2537d894ba"
+    },
+    {
+      "id": 7,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 4,
+        "subName": "Underwear"
+      },
+      "productPrice": 18.99,
+      "describe": "Immerge Logo Crewneck Sweatshirt",
+      "color": "blue",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F73dd7bd1-b586-4327-b51d-f2f9d6bdd0b1.jpeg?alt=media&token=ffceb8af-78ec-4ea8-8cb1-b05cfccb6370"
+    },
+    {
+      "id": 8,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 8,
+        "subName": "Pants"
+      },
+      "productPrice": 49.99,
+      "describe": "COLORBLOCK LOGO TRACK PANTS",
+      "color": "silver",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": false,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F1dade964-54f1-474a-b893-34d6f0670f42.jpeg?alt=media&token=cbf1f216-fbf2-4235-b57c-25630b3c84d4"
+    },
+    {
+      "id": 9,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 3,
+        "subName": "Jacket"
+      },
+      "productPrice": 85.5,
+      "describe": "STRIPED FULL ZIP BOMBER JACKET",
+      "color": "green",
+      "size": {
+        "xs": false,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 15,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F5fdbde1c-40aa-46ef-aef4-4dd3734a83aa.jpeg?alt=media&token=92209cc1-5e89-4af1-8544-75030f49d81a"
+    },
+    {
+      "id": 11,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 10,
+        "subName": "Wallet"
+      },
+      "productPrice": 39.99,
+      "describe": "SAFFIANO LEATHER 3-PIECE GIFT SET",
+      "color": "braun",
+      "size": {
+        "xs": false,
+        "s": false,
+        "m": false,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fad8e7e6b-eebb-470c-8f83-a725a98abe4d.jpeg?alt=media&token=02eaf252-ecb0-475d-971a-359c1261b169"
+    },
+    {
+      "id": 12,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 11,
+        "subName": "Belt"
+      },
+      "productPrice": 80,
+      "describe": "CKJ LOGO REVERSIBLE LEATHER BELT",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": true,
+        "l": false,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F94bd22b7-d73b-4fd9-b323-3038d5ac52e7.jpeg?alt=media&token=fa44440c-d4e3-410d-b8a7-2487a8d59bd4"
+    },
+    {
+      "id": 13,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 12,
+        "subName": "Logo-shop"
+      },
+      "productPrice": 100.5,
+      "describe": "CK ONE LOGO GRAPHIC LONG SLEEVE HOODIE",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 25,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fff23d3e9-38b9-40cb-aad9-c406966169c9.jpeg?alt=media&token=65db2952-02c3-4383-9cd2-bd50f4c5bccb"
+    },
+    {
+      "id": 15,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 5,
+        "subName": "Sweaters"
+      },
+      "productPrice": 60.99,
+      "describe": "REGULAR FIT WOOL BLEND BUTTON NECK SWEATER",
+      "color": "violet",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fff178bc9-829e-4dda-9ec4-0afaed8815d0.jpeg?alt=media&token=1bac7955-31ae-47d9-a8c2-aa7b88b624bd"
+    },
+    {
+      "id": 17,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 30.5,
+      "describe": "LOGO BLOCK CREWNECK T-SHIRT",
+      "color": "blue",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fcef202e3-e7e0-4456-9d3f-e5840e1f4806.jpeg?alt=media&token=b4c5fb40-dc78-49e8-851f-c058702dd090"
+    },
+    {
+      "id": 18,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "Jacket"
+      },
+      "productPrice": 130.5,
+      "describe": "STRIPED FULL ZIP BOMBER JACKET",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F9c97d1d3-1a82-4857-a5c6-3371baf395cc.jpeg?alt=media&token=130b00ff-588b-49b3-8075-6d01bd646691"
+    },
+    {
+      "id": 19,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 3,
+        "subName": "Jacket"
+      },
+      "productPrice": 75.5,
+      "describe": "DIAGONAL LOGO ZIP HOODED JACKET",
+      "color": "red",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F38047c8f-9d9a-4938-908e-0c05ef66dab7.jpeg?alt=media&token=a8f7636f-08c5-40b8-998a-2e64af26c964"
+    },
+    {
+      "id": 21,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 30.99,
+      "describe": "Circular Monogram Logo Crewneck T-Shirt",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F3ac7f708-f0b0-45aa-a445-87dde4a1f52f.jpeg?alt=media&token=9024077a-dbee-404f-a5a7-504e218510aa"
+    },
+    {
+      "id": 22,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 2,
+        "subName": "Jeans"
+      },
+      "productPrice": 60.5,
+      "describe": "STRAIGHT FIT FOREVER BLACK JEANS",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fe9b09456-c65b-414c-8250-27ec36501b78.jpeg?alt=media&token=2cfcac8b-6ac2-47aa-acf8-6c639594a817"
+    },
+    {
+      "id": 25,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 7,
+        "subName": "Activewear"
+      },
+      "productPrice": 55.5,
+      "describe": "MOVE 365 ATHLETIC DRAWSTRING SHORTS",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fa3888fe4-81e6-4ed3-88dd-d099f115efaa.jpeg?alt=media&token=b801f705-79ef-43a9-82d4-7d43964b6efa"
+    },
+    {
+      "id": 26,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 6,
+        "subName": "Shorts"
+      },
+      "productPrice": 63.5,
+      "describe": "PRIDE LOGO DRAWSTRING SHORTS",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 40,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Ffd77dfd8-80a8-40e6-895d-d75702868667.jpeg?alt=media&token=dd875b6b-dddb-40ee-bfcc-168b6293f1a6"
+    },
+    {
+      "id": 27,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 6,
+        "subName": "Shorts"
+      },
+      "productPrice": 42.5,
+      "describe": "DRAWSTRING SHORTS",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fccdec419-6d35-48ad-9039-a3c678126db7.jpeg?alt=media&token=2efb28c1-7f19-4764-b404-ab4b30f21d95"
+    },
+    {
+      "id": 28,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 35.5,
+      "describe": "PERFORMANCE ALLOVER GRAPHIC LOGO ROLL CUFF CROPPED T-SHIRT",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fbebc0e5b-a7bc-4b75-a61d-3e6dd3f7e9c2.jpeg?alt=media&token=61fa0f20-396a-4246-930c-347869f1039c"
+    },
+    {
+      "id": 29,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 2,
+        "subName": "Jeans"
+      },
+      "productPrice": 55.5,
+      "describe": "SKINNY FIT MID RISE GLACIER ANKLE JEANS",
+      "color": "blue",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F12399fc9-f3fa-4ffb-af94-8c772e7c5cd6.jpeg?alt=media&token=ecca4ad0-3870-4f54-be4d-ae1bca89f2ea"
+    },
+    {
+      "id": 30,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 3,
+        "subName": "Jacket"
+      },
+      "productPrice": 77.3,
+      "describe": " Oversized Utility Denim Trucker Jacket ",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fbe87df8d-36ce-42a1-8940-7a01003cd322.jpeg?alt=media&token=f7cfebdd-3dc3-4c27-880d-93c669e69a52"
+    },
+    {
+      "id": 31,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 4,
+        "subName": "Underwear"
+      },
+      "productPrice": 15.99,
+      "describe": "MODERN COTTON BIKINI",
+      "color": "silver",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F016e562e-843b-4f64-95e2-cd6d88934e70.jpeg?alt=media&token=94ae5e5a-2a78-4584-b112-b336a5692a6d"
+    },
+    {
+      "id": 32,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 5,
+        "subName": "Sweaters"
+      },
+      "productPrice": 35.99,
+      "describe": "VARSITY STRIPE V-NECK SWEATER",
+      "color": "silver",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F3f801441-1ddb-4564-aa75-e0457f83d6b5.jpeg?alt=media&token=ba146170-2ecf-4c62-8e2a-fc1f9991f795"
+    },
+    {
+      "id": 33,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 6,
+        "subName": "Shorts"
+      },
+      "productPrice": 60.59,
+      "describe": "PRIDE LOGO DRAWSTRING SHORTS",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F189bfec0-01e9-4c6e-9618-20ec159615e8.jpeg?alt=media&token=c77b2cf2-218d-440d-8b25-40d393004bb6"
+    },
+    {
+      "id": 34,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 7,
+        "subName": "Activewear"
+      },
+      "productPrice": 35.99,
+      "describe": "PERFORMANCE ALLOVER GRAPHIC LOGO ROLL CUFF CROPPED T-SHIRT",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 30,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F5bf6df08-d3c3-4df0-a0d4-711636015ea6.jpeg?alt=media&token=3d9d25f4-0da2-4a7d-b754-0459aacf1f42"
+    },
+    {
+      "id": 35,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 8,
+        "subName": "Pants"
+      },
+      "productPrice": 70.2,
+      "describe": "SOLID LYOCELL TIE WAIST HIGH RISE CROPPED PANTS",
+      "color": "green",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F6563274b-5d17-47e2-97b6-390aacf3f657.jpeg?alt=media&token=f3d630b3-28f4-4c36-b020-1b5d2787739b"
+    },
+    {
+      "id": 36,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 10,
+        "subName": "Wallet"
+      },
+      "productPrice": 40.4,
+      "describe": "SOLID LYOCELL TIE WAIST HIGH RISE CROPPED PANTS",
+      "color": "yellow",
+      "size": {
+        "xs": false,
+        "s": false,
+        "m": false,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F8aa0d015-aadc-42c8-9596-0a36f3883424.jpeg?alt=media&token=921d5e43-ad25-416d-9821-39d66c587263"
+    },
+    {
+      "id": 37,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 11,
+        "subName": "Belt"
+      },
+      "productPrice": 120.4,
+      "describe": "SOLID LYOCELL TIE WAIST HIGH RISE CROPPED PANTS",
+      "color": "orange",
+      "size": {
+        "xs": false,
+        "s": false,
+        "m": false,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F0f9ba95a-c84a-4151-ad72-6d7200353f71.jpeg?alt=media&token=fe8d8c4d-ce07-4f0d-9d96-5a36f7e04454"
+    },
+    {
+      "id": 38,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 12,
+        "subName": "Logo-shop"
+      },
+      "productPrice": 80.99,
+      "describe": "CK ONE OVERSIZED LOGO CROPPED T-SHIRT",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fb2c82b62-841e-4ec8-a08c-e1e2a9a78022.jpeg?alt=media&token=aa7d5fe5-ecd9-437a-ad16-a730860121a7"
+    },
+    {
+      "id": 39,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 5,
+        "subName": "Sweaters"
+      },
+      "productPrice": 40.6,
+      "describe": "MONOGRAM LOGO CREWNECK SWEATSHIRT",
+      "color": "yellow",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F2aa6aa00-c050-4209-a08c-42ff66fa1cff.jpeg?alt=media&token=1beef31a-eba8-4882-b75c-109d156d9d34"
+    },
+    {
+      "id": 40,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 3,
+        "subName": "Jacket"
+      },
+      "productPrice": 80.99,
+      "describe": "MID BLUE FADED DENIM TRUCKER JACKET",
+      "color": "blue",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F5854a9d3-0f41-4f6d-8d8c-bb99b34fbf1a.jpeg?alt=media&token=ce378a46-1de2-4507-a8d2-741032ad0e8f"
+    },
+    {
+      "id": 41,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 35.99,
+      "describe": "MONOGRAM LOGO CREWNECK CROPPED T-SHIRT",
+      "color": "pink",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F9b34a7c4-2202-4e67-afd9-66ab9ebaff67.jpeg?alt=media&token=b9403ccb-6a6c-417c-b423-039a6942b4f1"
+    },
+    {
+      "id": 42,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 5,
+        "subName": "Sweaters"
+      },
+      "productPrice": 51.5,
+      "describe": "FOIL MONOGRAM LOGO CROPPED HOODIE",
+      "color": "red",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 20,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F7086e09b-0e72-41cf-8c5d-8fa834819c3c.jpeg?alt=media&token=eed122db-c7e8-4b32-84e7-70be6468cc57"
+    },
+    {
+      "id": 43,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 3,
+        "subName": "Jacket"
+      },
+      "productPrice": 129.99,
+      "describe": "MIXED MEDIA COLORBLOCK PUFFER JACKET",
+      "color": "violet",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fd47f7bc4-c642-47ae-bbee-8f7b0cc1a0d3.jpeg?alt=media&token=82c203ce-c1ec-4eee-a36f-27e4312c551c"
+    },
+    {
+      "id": 44,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 2,
+        "subName": "Jeans"
+      },
+      "productPrice": 59.99,
+      "describe": "SKINNY FIT MID RISE SHARKBITE HEM ANKLE JEANS",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F31729af3-9ac1-4d58-83f4-fcc30340c9ab.jpeg?alt=media&token=82c492b5-8d95-4e7b-8b40-b3572cb64fb9"
+    },
+    {
+      "id": 45,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 4,
+        "subName": "Underwear"
+      },
+      "productPrice": 20.55,
+      "describe": "MODERN COTTON THONG",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F3e574323-8bc4-4e4d-9f67-cc8ebea908c3.jpeg?alt=media&token=ff4b0b65-7f44-4ee4-b259-6f5967f0426b"
+    },
+    {
+      "id": 46,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 6,
+        "subName": "Shorts"
+      },
+      "productPrice": 63.33,
+      "describe": "RAMIE BLEND CITRUS BELTED HIGH WAIST SHORTS",
+      "color": "yellow",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F1035c8d5-fec5-4502-9e0a-2dd2ca9761f5.jpeg?alt=media&token=f9da2016-d96c-4c12-93a9-5a59dc39f673"
+    },
+    {
+      "id": 47,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 7,
+        "subName": "Activewear"
+      },
+      "productPrice": 85.5,
+      "describe": "PERFORMANCE HEATHERED LOGO MEDIUM IMPACT SPORTS BRA",
+      "color": "pink",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": false,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 10,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F54aca89a-d544-46b9-8ffa-156640d5ce79.jpeg?alt=media&token=836985b3-3662-4985-b045-3936c60d0b8a"
+    },
+    {
+      "id": 48,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 8,
+        "subName": "Pants"
+      },
+      "productPrice": 89,
+      "describe": "LUX SOLID WIDE LEG CROPPED PANTS",
+      "color": "orange",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F7146971c-8577-4362-a8b5-0c4dabdfba7f.jpeg?alt=media&token=fdc23e49-90e8-4ef8-88be-2a5eec0886cc"
+    },
+    {
+      "id": 49,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 10,
+        "subName": "Wallet"
+      },
+      "productPrice": 99.3,
+      "describe": "SAFFIANO LEATHER ZIP CONTINENTAL WALLET",
+      "color": "black",
+      "size": {
+        "xs": false,
+        "s": false,
+        "m": false,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fce421092-03ac-454e-89d7-ac7f16f0986b.jpeg?alt=media&token=d54f8c73-cf02-4208-84cd-a38447591ac5"
+    },
+    {
+      "id": 50,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 11,
+        "subName": "Belt"
+      },
+      "productPrice": 40.99,
+      "describe": "CK MONOGRAM OVAL BUCKLE BELT",
+      "color": "red",
+      "size": {
+        "xs": false,
+        "s": true,
+        "m": true,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 15,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F207ff0ea-aa56-4ee8-8517-a1a1b4f228c7.jpeg?alt=media&token=92066d73-28a8-4aa4-96ae-74d3e1842b19"
+    },
+    {
+      "id": 51,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 12,
+        "subName": "Logo-shop"
+      },
+      "productPrice": 60.99,
+      "describe": "CK ONE ROSE LOGO MESH CROPPED LONG SLEEVE TEE",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F93a6ad29-a2f6-41a8-a72e-d9e51f032aeb.jpeg?alt=media&token=0e5116f2-436e-4814-99a3-044b88986f9f"
+    },
+    {
+      "id": 52,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 6,
+        "subName": "Shorts"
+      },
+      "productPrice": 60.99,
+      "describe": "SOLID LOGO 7\" VOLLEY SWIM SHORTS",
+      "color": "yellow",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": true,
+        "l": false,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": true,
+      "newCollection": false,
+      "saleProcent": 30,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F34b795bf-aa2c-40ae-86a1-3ce1e5a17df6.jpeg?alt=media&token=91702a1e-6acb-4551-8348-ee43c3cd5ab9"
+    },
+    {
+      "id": 53,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 25.5,
+      "describe": "MONOGRAM LOGO TIE-DYE T-SHIRT",
+      "color": "pink",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shoplifter-19507.appspot.com/o/images%2F2562ea2d-41ff-42fb-8afa-3198bc8cb0ec.jpeg?alt=media&token=9c9edafe-72e5-4184-81f0-1e94ce8e611d"
+    },
+    {
+      "id": 54,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 5,
+        "subName": "Sweaters"
+      },
+      "productPrice": "35.55",
+      "describe": "STRIPED CREWNECK PULLOVER SWEATER",
+      "color": "silver",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": true,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": false,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shoplifter-19507.appspot.com/o/images%2Fcfc2e744-aad1-42c0-84ca-5beb4c504cd8.jpeg?alt=media&token=672821c5-ba4f-46c2-afa5-8b4ee937f9f2"
+    }
+  ],
+  "newCollection": [
+    {
+      "id": 5,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 28.99,
+      "describe": "Monogram Logo Crewneck T-Shirt",
+      "color": "orange",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F4020e0c7-5135-453d-a99b-44c0c44767c3.jpeg?alt=media&token=6fb5d124-972f-4a6d-b733-7e1a5d9552be"
+    },
+    {
+      "id": 3,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 2,
+        "subName": "Jeans"
+      },
+      "productPrice": 45.3,
+      "describe": "Skinny Fit Austin Dark Blue Jeans",
+      "color": "blue",
+      "size": {
+        "xs": true,
+        "s": false,
+        "m": true,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Faada396d-ae86-4d1d-9b29-418c081b4526.jpeg?alt=media&token=44bf2ae2-6822-44de-8241-bfb57b5380fc"
+    },
+    {
+      "id": 17,
+      "category": {
+        "id": 2,
+        "nameUA": "men",
+        "nameEN": "men"
+      },
+      "subcategory": {
+        "id": 1,
+        "subName": "T-shirt"
+      },
+      "productPrice": 30.5,
+      "describe": "LOGO BLOCK CREWNECK T-SHIRT",
+      "color": "blue",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2Fcef202e3-e7e0-4456-9d3f-e5840e1f4806.jpeg?alt=media&token=b4c5fb40-dc78-49e8-851f-c058702dd090"
+    },
+    {
+      "id": 31,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 4,
+        "subName": "Underwear"
+      },
+      "productPrice": 15.99,
+      "describe": "MODERN COTTON BIKINI",
+      "color": "silver",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F016e562e-843b-4f64-95e2-cd6d88934e70.jpeg?alt=media&token=94ae5e5a-2a78-4584-b112-b336a5692a6d"
+    },
+    {
+      "id": 37,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 11,
+        "subName": "Belt"
+      },
+      "productPrice": 120.4,
+      "describe": "SOLID LYOCELL TIE WAIST HIGH RISE CROPPED PANTS",
+      "color": "orange",
+      "size": {
+        "xs": false,
+        "s": false,
+        "m": false,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F0f9ba95a-c84a-4151-ad72-6d7200353f71.jpeg?alt=media&token=fe8d8c4d-ce07-4f0d-9d96-5a36f7e04454"
+    },
+    {
+      "id": 44,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 2,
+        "subName": "Jeans"
+      },
+      "productPrice": "59.99",
+      "describe": "SKINNY FIT MID RISE SHARKBITE HEM ANKLE JEANS",
+      "color": "white",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": false,
+        "l": true,
+        "xl": true,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F31729af3-9ac1-4d58-83f4-fcc30340c9ab.jpeg?alt=media&token=82c492b5-8d95-4e7b-8b40-b3572cb64fb9"
+    },
+    {
+      "id": 46,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 6,
+        "subName": "Shorts"
+      },
+      "productPrice": "63.33",
+      "describe": "RAMIE BLEND CITRUS BELTED HIGH WAIST SHORTS",
+      "color": "yellow",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": true,
+        "xl": false,
+        "xxl": true
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F1035c8d5-fec5-4502-9e0a-2dd2ca9761f5.jpeg?alt=media&token=f9da2016-d96c-4c12-93a9-5a59dc39f673"
+    },
+    {
+      "id": 51,
+      "category": {
+        "id": 1,
+        "nameUA": "women",
+        "nameEN": "women"
+      },
+      "subcategory": {
+        "id": 12,
+        "subName": "Logo-shop"
+      },
+      "productPrice": "60.99",
+      "describe": "CK ONE ROSE LOGO MESH CROPPED LONG SLEEVE TEE",
+      "color": "black",
+      "size": {
+        "xs": true,
+        "s": true,
+        "m": true,
+        "l": false,
+        "xl": false,
+        "xxl": false
+      },
+      "sale": false,
+      "newCollection": true,
+      "saleProcent": 0,
+      "img": "https://firebasestorage.googleapis.com/v0/b/shop-b369f.appspot.com/o/images%2F93a6ad29-a2f6-41a8-a72e-d9e51f032aeb.jpeg?alt=media&token=0e5116f2-436e-4814-99a3-044b88986f9f"
+    }
+  ]
+}

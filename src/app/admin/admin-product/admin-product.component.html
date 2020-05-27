@@ -1,0 +1,88 @@
+<div class="conteiner">
+  <div class="main">
+    <div class="inp_block">
+        <p>Choose catecory</p>
+      <select class="inp_admin_text" id="categorySelect" [(ngModel)]="categoryName" (change)="setCategory()" name="categoryName">
+        <option disabled selected>Choose category</option>
+          <option *ngFor="let item of adminCategory;">
+          {{item.nameEN | titlecase}}</option>
+      </select>
+    </div>
+    <div class="inp_block">
+      <p>Sub Category</p>
+      <select name="" class="inp_admin_text" [(ngModel)]="subCategoryName" id="" (change)="setSubCategory()">
+          <option disabled selected>Choose sub category</option>
+          <option  *ngFor="let item of arrSubCategory">{{item.subName|titlecase}}</option>
+      </select>
+    </div>
+    <div class="inp_block">
+      <p>Price </p>
+      <input type="text" [(ngModel)]="productPrice" class="inp_admin_text"  name="productPrice" id="">
+    </div>
+    <div class="inp_block">
+      <p>Describe</p>
+      <input type="text"  class="inp_admin_text"  [(ngModel)]="productDescribe" name="productDescribe" id="">
+    </div>
+    <div class="inp_block">
+      <p>Color</p>
+      <select class="inp_admin_text"  [(ngModel)]="productColor" name="productColor">
+      <option disabled selected>Choose color</option>
+      <option *ngFor="let item of adminColors">{{item}}</option>
+      </select>
+      <!-- <input type="text"   id=""> -->
+    </div>
+    <div class="inp_block">
+      <p>Size</p>
+      <div  class="sizeBlock"  id=""> 
+        <div><p>XS</p><input type="checkbox"   [(ngModel)]="checkSizeXS" name="checkSizeXS" id=""></div>
+       <div><p>S</p><input type="checkbox"   [(ngModel)]="checkSizeS" name="checkSizeS" id=""></div> 
+       <div><p>M</p><input type="checkbox"  [(ngModel)]="checkSizeM" name="checkSizeM" id=""></div> 
+       <div><p>L</p><input type="checkbox"   [(ngModel)]="checkSizeL" name="checkSizeL" id=""></div> 
+       <div><p>XL</p><input type="checkbox"   [(ngModel)]="checkSizeXL" name="checkSizeXL" id=""></div> 
+       <div><p>XXL</p><input type="checkbox"   [(ngModel)]="checkSizeXXL" name="checkSizeXXL" id=""></div> 
+      </div>
+    </div>
+    <div class="inp_block">
+      <p>Images</p>
+      <input (change)="uploadFile($event)" type="file" class="inp_admin_text"  [(ngModel)]="productImg"  name="productImg" id="">
+    </div>
+    <div class="progres">
+      <div class="green" role="progressbar" [style.width]="(uploadProgress | async) + '%'" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="inp_block">
+      <button type="button" (click)=" addProduct()" class="inp_admin_btn">Add Post</button>
+    </div>
+  </div>
+  <div class="admin_clothes_count">
+    <table class="admin_table_clothes">
+      <thead class="table_item">
+        <th>#</th>
+        <th>Category</th>
+        <th>Type Clothes</th>
+        <th>Price</th>
+        <th>Describe</th>
+        <th>Color</th>
+        <th>Size</th>
+        <th>edit</th>
+        <th>delete</th>
+      </thead>
+      <tbody class="table_item_body">
+        <tr *ngFor="let item of adminProducts; let i=index">
+          <td>{{i+1}}</td>
+          <td>{{item.category.nameEN}}</td>
+          <td>{{item.subcategory.subName}}</td>
+          <td>{{item.productPrice}} $</td>
+          <td>{{item.describe| slice:0:10}}</td>
+          <td>{{item.color}}</td>
+          <td>{{item.size.xs}}</td>
+          <td>
+            <button class="admin_Btn" (click)=" upDateProduct(item)" >Edit</button>
+          </td>
+          <td>
+              <button class="admin_Btn" (click)="delProduct(item)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

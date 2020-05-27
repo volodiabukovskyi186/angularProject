@@ -1,0 +1,34 @@
+<div class="conteiner">
+        <div class="inp_block">
+          <p>Categoey name</p>
+          <input type="text" [(ngModel)]="nameNewSub"  name="nameNewSub" class="inp_admin_text" id="">
+        </div>
+        <div class="inp_block">
+          <button type="button"  (click)="addNewSub()" class="inp_admin_btn">Add Category</button>
+         
+        </div>
+      </div>
+      <div class="admin_clothes_count">
+              <table class="admin_table_clothes">
+                <thead class="table_item">
+                  <th>#</th>
+                  <th>Category</th>
+                  <th>edit</th>
+                  <th>delete</th>
+                </thead>
+                <tbody class="table_item_body">
+                  <tr *ngFor="let item of arrSubCategory; let i=index">
+                    <td>{{i+1}}</td>
+                    <td>{{item.subName}}</td>
+                    <td>
+                      <button class="admin_Btn"  (click)=" edit(item)" >Edit</button>
+                    
+                    </td>
+                    <td>
+                        <button class="admin_Btn"  (click)="deleteSubCategory(item)" >Delete</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+      

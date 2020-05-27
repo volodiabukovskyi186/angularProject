@@ -1,0 +1,205 @@
+* {
+  
+  list-style: none;
+  text-decoration: none;
+}
+
+.conteiner {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background: whitesmoke;
+}
+
+.brand_photo {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+
+}
+
+.photo_brand_first {
+  position: relative;
+  z-index: 0;
+  width: 98%;
+}
+
+.text_brand_first {
+  position: absolute;
+  z-index: 1;
+  width: 450px;
+  margin-top: 20%;
+
+
+
+}
+
+.text_brand_first h1 {
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.brand_btn {
+  margin-top: 20px;
+  padding-top: 15px;
+  display: block;
+  border: solid whitesmoke 1px;
+  color: whitesmoke;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  transition: 0.5s;
+
+}
+
+.text_brand_first ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand_btn:hover {
+  background: whitesmoke;
+  color: rgb(31, 31, 31);
+
+}
+
+
+
+//second block of batnd photo=>
+.brand_photo_second {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.photo_brand_block_second {
+  width: 48%;
+
+}
+
+.photo_brand_block_third {
+  width: 48%;
+
+}
+
+.photo_brand_second {
+  width: 100%;
+}
+
+.photo_brand_third {
+  width: 100%;
+}
+
+//third block of batnd photo=>
+.brand_third {
+  position: relative;
+  z-index: 0;
+  margin: 20px auto;
+  background: rgb(61, 61, 61);
+  width: 98%;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.brand_third h1 {
+  position: relative;
+  z-index: 1;
+  color: whitesmoke;
+
+}
+
+.new_collection_btn_men {
+  width: 200px;
+  height: 50px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+  border: solid whitesmoke 1px;
+  transition: 0.3s;
+}
+
+.new_collection_btn_women {
+  width: 200px;
+  height: 50px;
+  color: rgb(31, 31, 31);
+  font-size: 15px;
+  border: solid whitesmoke 1px;
+  transition: 0.3s;
+}
+
+.new_collection_btn_women:hover {
+  background: rgb(31, 31, 31);
+  color: whitesmoke;
+  border: solid rgb(31, 31, 31) 1px;
+}
+
+.new_collection_btn_men:hover {
+  background: rgb(31, 31, 31);
+  color: whitesmoke;
+  border: solid rgb(31, 31, 31) 1px;
+}
+
+.group_new_collection {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+//media =>
+@media screen and(max-width:766px)and(min-width:320px) {
+  .text_brand_first {
+    width: 300px;
+
+  }
+
+  .brand_btn {
+    font-size: 13px;
+    width: 130px;
+    height: 40px;
+    padding-top: 10px;
+  }
+
+  .text_brand_first {
+    margin-top: 10%;
+  }
+  .brand_photo_second {
+    margin-top: 10px;
+  }
+
+  //dark silver group=>
+  .new_collection{
+      
+    width: 300px;
+   
+
+  }
+  .new_collection h1{
+      text-align: center;
+  } 
+  .group_new_collection {
+    // margin:0 auto;
+    // width: 300px;
+  }
+  .new_collection_btn_women{
+    font-size: 13px;
+    width: 140px;
+    height: 40px;
+  }
+  .new_collection_btn_men{
+    font-size: 13px;
+    width: 140px;
+    height: 40px;
+  }
+  .brand_third {
+      margin-top: 5px;
+  }
+}

@@ -1,0 +1,65 @@
+<div class="conteiner">
+  <div class="infUser" *ngFor="let item of userData; let i=index" >
+    <div class="informAbautUser">
+        <p>PERSONAL DATA</p>
+      <h1>NAME: {{item.name|uppercase}}</h1>
+      <p>PHONE NUMBER:{{item.phone}}</p>
+      <p>CITY:{{item.city|uppercase}}</p>
+      <p>STREET:{{item.street|uppercase }}</p>
+      <p>HOUSE:{{item.house|uppercase}}</p>
+      <div class="submit_order">
+            <button class="submit_btn" (click)="updateUserdata()" type="submit">UPDATE INFORMATYION</button>
+    </div>
+    </div>
+
+  </div>
+  <div class="addInfUser" *ngIf="!addInformStatus">
+    <h1>ADD IMFORMATION ABOUT YOU</h1>
+    <form>
+      <div class="buy_product">
+        <div class="buy_product_detalice">
+
+          <div class="user_data">
+            <p>NAME:</p>
+            <input type="text" [(ngModel)]="userName" name="userName" id="">
+            <p>PHONE NUMBER:</p>
+            <input type="text" prefix="+38" mask="(000)000-00-00" [(ngModel)]="userPhone" name="userPhone" id="">
+            <div class="grup_city_street">
+              <div>
+                <p>CITY:</p>
+                <input type="text" [(ngModel)]="userCity" name="userCity" id="">
+              </div>
+              <div>
+                <p>STREET:</p>
+                <input type="text" [(ngModel)]="userStreet" name="userStreet" id="">
+              </div>
+              <div>
+                <p>HOUSE:</p>
+                <input type="text" [(ngModel)]="userHouse" name="userHouse" id="">
+              </div>
+
+            </div>
+            <div class="submit_order">
+              <button class="submit_btn"  (click)="postDatauser()" type="submit">ADD INFORMATYION</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <!-- <form >
+        <p>NAME</p>
+      <input type="name" name="" id="">
+      <p>PHONE NUMBER</p>
+      <input type="phone" name="" id="">
+      <p> CITY</p>
+      <input type="city" name="" id="">
+      <p>STREET</p>
+      <input type="street" name="" id="">
+      <p> HOUSE</p>
+      <input type="house" name="" id="">
+      <button>ADD INFORMATION</button>
+    </form> -->
+
+
+  </div>
+</div>

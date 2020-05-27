@@ -1,0 +1,706 @@
+.conteiner {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+ 
+}
+
+.about_page {
+    margin-top: 10px;
+  width: 98%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about_page_text_block {
+
+  width: 50%;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.about_page_photo_block {
+
+  width: 50%;
+
+
+
+}
+
+.about_page_photo {
+  width: 100%;
+
+}
+
+.block_title {
+  width: 350px;
+  margin: 0 auto;
+
+}
+
+.main {
+  margin-top: 20px;
+  width: 98%;
+
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.filterBtn {
+  margin-left: 30px;
+  width: 130px;
+  height: 40px;
+  background-color: rgb(53, 53, 53);
+  color: whitesmoke;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-around;
+  border-style: none;
+  border-radius: 2px;
+  
+
+}
+.filterBtn p{
+    font-weight:100;
+}
+
+.filterBtn i {
+  padding-top: 3px;
+}
+
+.filter_menu {
+  margin: 10px auto;
+  width: 100%;
+  height: 200px;
+  display: none;
+  transition: all 3s;
+  // background: rgb(52, 53, 53);
+  background:white;
+  border-radius: 2px;
+}
+
+.inline {
+  display: flex;
+}
+
+.inline111 {
+  transform: 2s;
+  transform: skew(30deg, 20deg);
+}
+
+.clothing {
+  margin: 10px auto;
+  width: 100%;
+//  min-height: 150vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+
+
+}
+
+.clothing_content {}
+
+.clothing_small {
+  width: 78%;
+
+}
+
+.activeRouter {
+  display: inline-block;
+
+  width: 20%;
+  height: 30%;
+}
+
+//clothes block=>
+.clothes_block {
+  width: 30vw;
+  height: 80vh;
+margin: 10px 10px;
+border-radius: 3px;
+color: rgb(116, 116, 116);
+font-family: 'Open Sans', sans-serif;
+
+}
+
+.clothes_picture img{
+    width: 100%;
+    height: 73vh;
+}
+.clothing_price{
+   
+  display: flex;
+  justify-content: flex-start;
+    color: red;
+   margin-top: 5px;
+    font-size: 17px;
+    font-weight: 100;
+}
+.pice_discrip{
+  width: 65%;
+ 
+}
+.clothing_description{
+    font-size: 12px;
+    margin: 5px 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+.saleProcent{
+  font-size: 12px;
+  width: 35%;
+  height: 30px;
+height: 10px;
+
+}
+.about_clothing{
+    margin-top:10px;
+}
+.trans{
+    transition: 5s;
+}
+.filters{
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  width: 98%;
+  height: 98%;
+}
+  .filter_one_block{
+    margin-top: 10px;
+  width: 20vw;
+  height: 25vh;
+    // border:solid 1px silver;
+  color: rgb(31, 31, 31);
+  p{
+    margin-left: 10px;
+  }
+}
+.filter_colors{
+  width: 99%;
+  height: 10vh;
+  
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul li{
+    width: 20px;
+    height: 20px;
+   margin-top: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-bottom: 5px;
+  }
+}
+.black{
+  background-color: black;
+}
+.white{
+  background-color: whitesmoke;
+  border: 1px silver solid;
+
+}
+.silver{
+  background-color: silver;
+  
+}
+.green{
+  background-color: green;
+  
+}
+.blue{
+  background-color: blue;
+  
+}
+.red{
+  background-color: red;
+  
+}
+.pink{
+  background-color: pink;
+  
+}
+.yellow{
+  background-color: yellow;
+}
+.violet{
+  background-color: rgb(194, 34, 194);
+}
+.orange{
+  background-color: rgb(255, 145, 0);
+}
+.acrive_color{
+  border:rgb(7, 7, 7) 3px solid;
+}
+.acrive_color_white{
+  border:rgb(170, 168, 168) 3px solid;
+}
+.moreBlock{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+
+}
+.moreColothing{
+  width: 70px;
+  height: 70px;
+  border: solid 1px silver;
+  border-radius: 50%;
+  padding-bottom: 3px;
+  &:hover{
+    background-color: rgb(31, 31, 31);
+    color: whitesmoke;
+  }
+}
+.priceFilter {
+  ul li{
+    list-style: none;
+    border: solid silver 1px;
+    width: 90%;
+    height: 40px;
+    text-align: center;
+  }
+}
+.filterSizeBlock ul{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.filterSize{
+  margin-top: 5px;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  border: solid silver 1px;
+  text-align: center;
+  padding-top: 10px;
+
+  &:hover{
+    background: silver;
+
+  }
+}
+.fastBuy{
+  font-size: 17px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-weight: 100;
+  height: 25px;
+  border-bottom: 1px  transparent;
+  
+  cursor: pointer;
+  
+  &:hover{
+    color: #333;
+    border-bottom:#333 1px solid
+  }
+}
+.sizeActive{
+  color: whitesmoke;
+  background: rgb(31, 31, 31)
+}
+//user Fast buy=>
+.fast_buy_block{
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 4px;
+  position: fixed;
+  z-index: 1000;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height:60%;
+  background-color:rgb(235, 230, 230);
+}
+
+.icon{
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 30px;
+  i{
+
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+}
+.displayInline{
+  display: inline-block
+}
+//first Block=>
+.order_photo {
+ 
+  width: 45%;
+  height:90% ;
+  img{
+    width: 80%;
+    height: 100%;
+  }
+}
+//second Block=>
+.order{
+ 
+  width: 100%;
+  height: 98%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.order_description{
+  width: 45%;
+  height:90% ;
+  
+  color: rgb(31, 31, 31);
+  h1{
+    font-size: 20px;
+  }
+  p{
+    margin-top: 10px;
+  }
+
+}
+.order_size{
+  margin-top: 20px;
+      width: 100%;
+    display: flex;
+  flex-wrap: wrap;
+    
+  
+      .size_btn{
+          color: rgb(116, 116, 116);
+           border-radius: 2px;
+          font-size: 20px;
+          font-weight: 100;
+          margin-left: 5px;
+          margin-top: 5px;
+          width: 9vw;
+          height: 7vh;
+          border: solid  silver 1px;
+         
+         
+      }
+      .sizeBBB:hover{
+          background-color:rgb(47, 47, 47);
+          color: whitesmoke;
+      }
+     
+  
+  
+  }
+  .active{
+      
+      background-color:rgb(48, 48, 48);
+      color: white;
+  }
+  .disabledSize{
+    background-color: silver;
+    & :hover{
+        border: silver 1px solid;
+    }
+  }
+  .countProduct{
+    text-align: center;
+           color: rgb(116, 116, 116);
+           border-radius: 2px;
+          font-size: 20px;
+          font-weight: 100;
+          margin-left: 5px;
+          margin-top: 5px;
+          width: 5vw;
+          height: 7vh;
+          border: solid  silver 1px;
+}  
+.add_bag_btn{
+  margin-top: 5px;
+  height: 50px;
+  width: 20vw;
+  // margin-bottom: 10px;
+  margin-left: 20px;
+  background-color:  rgb(116, 116, 116);
+  border-radius: 3px;
+  color:whitesmoke;
+  font-size: 20px;
+  font-weight: 100;
+
+}
+.count_add{
+  display: flex;
+  justify-content: space-around;
+  width:70%;
+  height: 60px;
+  // background-color: red;
+}
+.cross_price{
+  font-size: 100;
+}
+
+//third Block=>
+.addToBag{
+  width: 29%;
+  height:90% ;
+  border: solid 1px black;
+}
+
+
+.scaleBlock{
+  transform: scale(1.05);
+  transition: .5s all;
+  z-index: 1000;
+}
+
+
+
+
+
+::ng-deep {
+.custom-slider .ng5-slider .ng5-slider-selection {
+  background:  #333;
+}
+.custom-slider .ng5-slider .ng5-slider-pointer {
+  width: 8px;
+  height: 16px;
+  top: auto; /* to remove the default positioning */
+  bottom: 0;
+  background-color: #333;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.custom-slider .ng5-slider .ng5-slider-pointer:after {
+  display: none;
+}
+}
+
+
+//filter menu=>
+
+
+@media screen and(max-width:1200px)and(min-width:980px) {
+  .clothes_block {
+    width: 30vw;
+    height: 65vh;
+    
+}
+.clothes_picture img{
+  width: 100%;
+  height: 57vh;
+  }
+  .fast_buy_block{
+    left: 20%;
+    width: 60%;
+    height:55%;
+  
+  }
+  .order_photo {
+    margin-left: 20px;
+    width: 50%;
+    height:85% ;
+    img{
+      width: 80%;
+      height: 100%;
+    }
+  }
+  .order_size{
+    margin-top: 20px;
+        width: 100%;
+        .size_btn{
+            width: 9vw;
+            height: 7vh;  
+        }
+    }
+    .count_add{
+      width:70%;
+      height: 100px;
+     
+    }
+    .countProduct{
+      width: 6vw;
+      height: 4vh;
+    }
+    .add_bag_btn{
+      width: 100%;
+
+
+    }
+
+}
+
+
+@media screen and(max-width:980px)and(min-width:768px) {
+    .clothes_block {
+        width: 30vw;
+        height: 53vh;
+        
+    }
+    .clothes_picture img{
+      width: 100%;
+      height: 42vh;
+      }
+    .saleProcent{
+     width: 100%;
+     display: flex;
+     align-self: flex-start;
+    }
+    .fastBuy{
+     font-size: 15px;
+    }
+
+
+//fast buy block=>
+.fast_buy_block{
+  left: 20%;
+  width: 60%;
+  height:40%;
+ 
+
+}
+.order_photo {
+  display: flex;
+  justify-content: center;
+  
+  width: 50%;
+  height:85% ;
+  img{
+    width: 80%;
+    height: 85%;
+  }
+}
+.order_size{
+  margin-top: 20px;
+      width: 100%;
+      .size_btn{
+          width: 7vw;
+          height: 5vh;  
+      }
+  }
+  .count_add{
+    width:80%;
+    height: 100px;
+   
+  }
+  .countProduct{
+    width: 6vw;
+    height: 4vh;
+  }
+  .add_bag_btn{
+    width: 100%;
+
+
+  }
+}
+@media screen and(max-width:767px)and(min-width:480px) {
+
+  .clothes_block {
+      width: 44vw;
+      height: 52vh;
+     
+  }
+  .clothes_picture img{
+    width: 100%;
+    height: 40vh;
+    }
+  .about_page_text_block {
+    width: 98%;
+    height: 300px;
+  }
+  .about_page_photo_block {
+    width: 98%;
+  }
+  .about_page{
+    flex-direction: column-reverse;
+  }
+  .filter_one_block{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+    
+  }
+  .filter_menu {
+    display: none;
+    height: 500px;
+  }
+  .filters{
+    flex-direction: column;
+  }
+
+  .fast_buy_block{
+    display: none;
+  }
+  .fastBuy{
+    display: none;
+
+  }
+  .inline {
+    display: flex;
+  }
+ 
+  .saleProcent{
+    width: 70%;
+  
+  }
+}
+@media screen and(max-width:480px)and(min-width:320px) {
+  .clothes_block {
+      width: 95vw;
+      height: 500px;
+  }
+  .about_page_text_block {
+    width: 98%;
+    height: 300px;
+  }
+  .about_page_photo_block {
+    width: 98%;
+  }
+  .about_page{
+    flex-direction: column-reverse;
+  }
+ 
+  .filter_one_block{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+   
+    
+  }
+  .filter_menu {
+    display: none;
+    height: 500px;
+  }
+  .filters{
+    flex-direction: column;
+  }
+  .clothes_block{
+   
+    height: 600px;
+  }
+  .clothes_picture img{
+    height: 500px;
+  }
+  .fast_buy_block{
+    display: none;
+  }
+  .fast_buy_block{
+    display: none;
+  }
+  .fastBuy{
+    display: none;
+
+  }
+  .inline {
+    display: flex;
+  }
+}
+
+

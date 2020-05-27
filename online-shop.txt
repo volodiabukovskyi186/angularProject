@@ -1,0 +1,23 @@
+app/
+    components/
+        header
+        footer
+    pages/
+        home
+        man
+        woman
+        sales
+        new colection
+        basket
+    shared/
+        interfaces/
+        models/
+        pipes/
+        directives/
+        services/
+     admin/
+        admin-home/
+        admin-man/woman/
+        admin-sales/
+        admin-new colection/
+        admin-orders/

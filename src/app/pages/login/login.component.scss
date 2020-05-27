@@ -1,0 +1,91 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.conteiner{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+   
+
+}
+.singUp{
+
+    width: 50vw;
+    height: 100vh;
+
+  
+   
+
+}
+.inpBlock{
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
+   
+    form{
+        label{
+            font-size: 25px;
+            margin-top: 10px;
+            color:rgb(56, 55, 55);
+        }
+        input{
+    
+            color:rgb(56, 55, 55);
+            margin-top: 10px;
+            width: 100%;
+            height: 5vh;
+            font-size: 20px;
+            border: solid 1px silver;
+            border-radius: 5px;
+        }
+        input.ng-touched.ng-invalid{
+            border:solid red 1px;
+           
+        }
+        input.ng-touched.ng-valid{
+            border:solid green 1px;
+           
+        }
+    }
+  
+}
+.register{
+    margin-top: 10px;
+    color:rgb(56, 55, 55);
+    margin-top: 10px;
+    width: 100%;
+    height: 5vh;
+    font-size: 20px;
+    border: solid 1px silver;
+    border-radius: 5px;
+    transition: 0.3s;
+
+  
+}
+.goToBtn{
+    margin-top: 20px;
+     width: 10vw;
+    color: black;
+     border: none;
+     background-color: white;
+  
+    &:hover{
+        text-decoration: underline
+    }
+
+}
+
+.sinInErr{
+    width: 100%;
+    height: 30px;
+   
+    p{
+        margin-top: 10px;
+        color: red;
+    }
+}

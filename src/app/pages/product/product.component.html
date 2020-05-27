@@ -1,0 +1,133 @@
+<div class="conteiner" (window:resize)="onResize($event)" >
+  <div class="about_page">
+    <div class="about_page_text_block">
+      <div class="block_title">
+        <h1 *ngIf="!categoryImgStatus"  @product_text class="about_page_title">WOMEN'S COZY CLOTHING</h1>
+        <h1 *ngIf="categoryImgStatus"  @product_text class="about_page_title">MEN'S COZY CLOTHING</h1>
+        <p  @product_text>Shop lounge essentials with an extra 20% off.
+          Code: COZY</p>
+      </div>
+    </div>
+    <div class="about_page_photo_block"  >
+      <img *ngIf="!categoryImgStatus" @product_picture  class="about_page_photo" src="../../../assets/images/girl1.jpg" alt="">
+      <img *ngIf="categoryImgStatus"  @product_picture class="about_page_photo" src="../../../assets/images/man1.jpg" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="main" >
+  <button class="filterBtn"  routerLinkActive="active" (click)="filterBtn()">
+    <p>Filter </p>
+    <i *ngIf="!filterStatus" class="fas fa-sliders-h"></i>
+    <i *ngIf="filterStatus" class=" fas fa-times"></i>
+
+  </button>
+  <!-- [@fade]='myAnimatiom' -->
+  <!-- [class.inline]='filterStatus' -->
+  <div class="filter_menu  " [@fade]='myAnimatiom'  [ngClass]="{'inline': filterStatus==true}" >
+    <div class="filters" [@fade2]='myAnimatiom'   >
+      <div class="filter_one_block"   >
+        <h4 style="  margin-top: 7px;  margin-right: 20px;">COLORS</h4>
+        <div class="filter_colors">
+          <ul>
+            <li *ngFor="let item of arrColors; let i=index" class="{{item.color}}"
+               [ngClass]="{'acrive_color': item.status==true}" (click)="colorFilter(item)"></li>
+          </ul>
+        </div>
+      </div>
+      <div class="filter_one_block priceFilter custom-slider" >
+        <h4 style="  margin-top: 20px; margin-right: 20px;">PRICE</h4>
+          <ng5-slider [(value)]="value"   (userChangeEnd)="priceFilter()"  [(highValue)]="highValue" [options]="options"></ng5-slider>
+      </div>
+      <div class="filter_one_block filterSizeBlock">
+        <h4 style="  margin-top: 15px;  margin-right: 20px;">SIZE</h4>
+        <ul>
+          <li (click)="sizeFilter(item)" [ngClass]="{'sizeActive': item.status==true}"  *ngFor="let item of arrSizeFilter; let i=index" class="filterSize">{{item.size|uppercase}}</li>
+        </ul>
+      </div>
+      <!-- <div class="filter_one_block">
+      </div> -->
+    </div>
+  </div>
+  <div class="clothing">
+
+    <div class="clothes_block" 
+      *ngFor="let item of arrProducts; let i=index">
+      <div  appScaleBlock class="clothes_picture" [routerLink]="[ '/product/'+item.category.nameEN, item.id ]">
+        <img    src="{{item.img}}" alt="">
+      </div>
+      <div class="clothing_description">
+        <div class="pice_discrip">
+          <div class="clothing_price">
+
+            <p *ngIf="!item.sale">price:{{item.productPrice}}$</p>
+            <p style="text-decoration: line-through;color:rgb(87, 85, 85)" *ngIf="item.sale">
+              price:{{item.productPrice}}$
+            </p>
+            <p *ngIf="item.sale" style="color: red; text-decoration:none; padding-left: 5px;">
+              {{item.productPrice-(item.productPrice*item.saleProcent/100)|number:'2.2-3'}}$</p>
+
+          </div>
+          <div class="saleProcent" *ngIf="item.sale">
+              <p>SALE: <span style="color: red">{{item.saleProcent}}%</span></p>
+            </div>
+          <div class="about_clothing">
+            <p>{{item.describe|slice:0:60}}</p>
+          </div>
+          
+        </div>
+        <div class="fastBuy" (click)="fastBay(item.id)">
+            <p >FAST BAY</p>
+         </div>
+      </div>
+    </div>
+
+  </div>
+  <div class="moreBlock">
+      <button class="moreColothing" (click)="moreNine()">MORE CLOTHING</button>
+  </div>
+</div>
+
+<div class="fast_buy_block" [ngClass]="{'displayInline': modalStatus}">
+  <div class="icon" (click)="checkModal()" style="top: 5px ; right:20px;">
+      <i  style="color:#313131" class=" fas fa-times"></i>
+  </div>
+  <div class="order">
+    <div class="order_photo">
+        <img src="{{view?.img}}" alt="">
+    </div>
+    <div  class="order_description">
+        <h1>{{view?.describe|uppercase}}</h1>
+      <div  style="display: flex;justify-content:flex-start;font-weight: 100;">
+        <h3  *ngIf="!view?.sale" style="font-weight: 100; margin-top: 10px;" class="cross_price" >Price:{{view?.productPrice}}$</h3>
+        <h4 style="text-decoration: line-through;color:rgb(87, 85, 85); font-weight: 100;"  *ngIf="view?.sale">price:{{view?.productPrice}}$
+        </h4>
+        <h4 *ngIf="view?.sale" style="color: red; text-decoration:none; padding-left: 5px; font-weight: 100;">{{view?.productPrice-(view?.productPrice*view?.saleProcent/100)|number:'1.1-2'}}$</h4>
+     </div>
+    
+     <p>COLOR:{{view?.color|uppercase}}</p>
+     <div class="order_size" *ngIf="!stausSizeBlock" >
+        <button class="size_btn" [ngClass]="{ 'active' : isValue == 1 }" (click)="chooseSize('xs')"  [class.sizeBBB]='view?.size.xs' [class.disabledSize]='!view?.size.xs' [disabled]='!view?.size.xs'  >XS</button>
+        <button class="size_btn" [ngClass]="{ 'active' : isValue == 2 }" (click)="chooseSize('s')" [class.sizeBBB]='view?.size.s' [class.disabledSize]='!view?.size.s' [disabled]='!view?.size.s'>S</button>
+        <button class="size_btn" [ngClass]="{ 'active' : isValue == 3 }" (click)="chooseSize('m')" [class.sizeBBB]='view?.size.m' [class.disabledSize]='!view?.size.m'[disabled]='!view?.size.m'>M</button>
+        <button class="size_btn" [ngClass]="{ 'active' : isValue == 4 }" (click)="chooseSize('l')" [class.sizeBBB]='view?.size.l' [class.disabledSize]='!view?.size.l' [disabled]='!view?.size.l'>L</button>
+        <button class="size_btn" [ngClass]="{ 'active' : isValue == 5 }" (click)="chooseSize('xl')" [class.sizeBBB]='view?.size.xl' [class.disabledSize]='!view?.size.xl'[disabled]='!view?.size.xl'>XL</button>
+        <button class="size_btn" [ngClass]="{ 'active' : isValue == 6 }" (click)="chooseSize('xxl')" [class.sizeBBB]='view?.size.xxl' [class.disabledSize]='!view?.size.xxl' [disabled]='!view?.size.xxl'>XXL</button>
+      </div>
+      <div class="chooseSize">
+        <p *ngIf="sizeStatus" style="color: red; font-size:18px;"> CHOOSE SIZE</p>
+      </div>
+      <div class="count_add">
+          <input class="countProduct" type="number" [(ngModel)]="countProductOrder" name="countProductOrder" id="">
+          <button class="add_bag_btn"  (click)="addBag(view)">ADD TO BAG</button>
+      </div>
+     
+    </div>
+   
+    <!-- <div class="addToBag">
+        <div class="describe"></div>
+       
+        <div class="addBag"></div>
+    </div> -->
+  </div>
+</div>

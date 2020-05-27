@@ -1,0 +1,149 @@
+<header class="header" (window:resize)="onResize($event)">
+  <div class="logo" [routerLink]="[ 'home']">
+    <h1>SHOPLIFTER</h1>
+  </div>
+  <div class="navbar">
+    <ul>
+      <li class="btn_nav" [routerLink]="[ 'home']">HOME</li>
+      <li class="btn_nav"   [routerLink]="['product/men']">MEN
+        <div class="men_sub_menu"  >
+          <ul >
+            <h1 style="margin-top: 20px">APPAREL</h1>
+            <li *ngFor="let item of SubCateg; let i=index" (click)="subNameCateg(item.subName)"><input
+                [routerLink]="[ 'product/men']" type="button" class="sub_menu_btn" value="{{item.subName|uppercase }}">
+            </li>
+          </ul>
+          <div class="block_img">
+            <img class="photo_header" src="../../../assets/images/headerMen.jpg" alt="">
+          </div>
+        </div>
+      </li>
+      <li class="btn_nav" (mouseover)="navSubMenuMen='open'"  (mouseleave)="navSubMenuMen='close'"   [routerLink]="['product/women']">WOMEN
+        <div class="women_sub_menu" [@navSubMenu]='navSubMenuMen' >
+       
+          <ul   >
+            <h1  style="margin-top: 20px">APPAREL</h1>
+            <li  *ngFor="let item of SubCateg; let i=index" (click)="subNameCateg(item.subName)"><input
+                [routerLink]="[ 'product/women']" class="sub_menu_btn" type="button" value="{{item.subName|uppercase}}">
+            </li>
+          </ul>
+          <div   class="block_img"  >
+            <img class="photo_header" src="../../../assets/images/Womenwomen.jpg" alt="">
+
+          </div>
+        </div>
+      </li>
+
+      <li class="btn_nav" [routerLink]="['newCollection']">NEW COLLECTION</li>
+      <li class="btn_nav" [routerLink]="[ 'sales']">SALE</li>
+    </ul>
+  </div>
+
+  <div class="singing">
+
+    <button class="singIn_block" *ngIf="!singOutStatus" [routerLink]="[checkLoginPage]">
+      <i class="iconColor mr5 far fa-user"></i>
+      <p>SING IN</p>
+    </button>
+    <button *ngIf="singOutStatus" class="myProfile" [routerLink]="['/'+checkLoginPage]">
+      <i class="iconColor mr5 far fa-user"></i>
+      <p>MY PROFILE</p>
+    </button>
+    <button *ngIf="singOutStatus" class="singOut" (click)="sinOut()" [routerLink]="[checkLoginPage]">
+      <p>SING OUT</p>
+    </button>
+    <button class="bag" [routerLink]="[ 'orders']">
+      <span *ngIf="getProduct.length" class="bagCount  iconColor">{{getProduct.length}}</span>
+      <i *ngIf="!getProduct.length" class="iconColor  fas fa-shopping-bag"></i>
+      <p>BAG</p>
+    </button>
+  </div>
+
+  <div class="small_singing" >
+    <button class="singIn_block" *ngIf="!singOutStatus" [routerLink]="[checkLoginPage]">
+      <i class="iconColor mr5 far fa-user"></i>
+      <p>SING IN</p>
+    </button>
+    <button *ngIf="singOutStatus" class="myProfile" [routerLink]="['/'+checkLoginPage]">
+      <i class="iconColor mr5 far fa-user"></i>
+      <p>MY PROFILE</p>
+    </button>
+
+    <button class="bag" [routerLink]="[ 'orders']">
+        <span *ngIf="getProduct.length" class="bagCount  iconColor">{{getProduct.length}}</span>
+        <i *ngIf="!getProduct.length" class="iconColor  fas fa-shopping-bag"></i>
+        <p>BAG</p>
+      </button>
+
+    <button *ngIf="singOutStatus" class="singOut" (click)="sinOut()" [routerLink]="[checkLoginPage]">
+      <p>SING OUT</p>
+    </button>
+
+    <!-- *ngIf="burgerMenuStatus" -->
+      <!-- <h1 style="margin-top: 15px">APPAREL</h1> -->
+       <!-- <h1 style="margin-top: 20px">APPAREL</h1> -->
+    <div  style="margin-bottom: 5px ;margin-left: 5px" >
+      <ul>
+        <li >
+          <i *ngIf="!burgerMenuStatus" (click)="barMenu()" class="iconColor   small_bar fas fa-bars"></i>
+          <i *ngIf="burgerMenuStatus" (click)="barMenu()" class="iconColor   small_bar fas fa-times"></i>
+          <ul    [@smallbar]='myAnimatiom'  class="main_small_bar"   >
+              <!-- *ngIf="!burgerMenuStatus" -->
+            <li  (click)="smallMenWomen()"  [routerLink]="[ 'home']">
+              <p  [@smallBarText]='myAnimatiom' >HOME</p>
+            </li>
+            <li  (click)="smallMen()">
+              <p [@smallBarText]='myAnimatiom'>MEN</p>
+              <div [@menSubMenu]='mySubMen'     class="small_main_sub" >
+                  <!-- *ngIf="smallMenStatus"  -->
+                <ul   >
+                
+                  <li *ngFor="let item of SubCateg; let i=index">
+                    <input [routerLink]="[ 'product/men']" (click)="subNameCateg(item.subName)" type="button"
+                      class="sub_menu_btn" value="{{item.subName|uppercase }}">
+                  </li>
+                </ul>
+              </div>
+
+            </li>
+            <li  (click)="smallWomen()">
+              <p [@smallBarText]='myAnimatiom'>WOMEN</p>
+              <div class="small_main_sub" [@womenSubMenu]='mySubWomen'>
+                  <!-- *ngIf="smallWomenStatus"  -->
+                <ul>
+                 
+                  <li *ngFor="let item of SubCateg; let i=index" (click)="subNameCateg(item.subName)"><input
+                      [routerLink]="[ 'product/women']" class="sub_menu_btn" type="button"
+                      value="{{item.subName|uppercase}}">
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li  (click)="smallMenWomen()"  [routerLink]="['newCollection']">
+              <p [@smallBarText]='myAnimatiom'> NEW COLLECTION</p>
+            </li>
+            <li   (click)="smallMenWomen()" [routerLink]="[ 'sales']">
+              <p [@smallBarText]='myAnimatiom'> SALE</p>
+            </li>
+
+          </ul>
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+
+
+
+</header>
+
+
+
+
+
+
+
+

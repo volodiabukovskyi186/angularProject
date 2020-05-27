@@ -1,0 +1,35 @@
+<div class="conteiner">
+    <div class="singUp">
+        <div class="inpBlock" *ngIf="singStatus">
+            <h1 style="text-align: center">CREATE ACCOUNT</h1>
+            <form (ngSubmit)="singUp(singUpForms.value)"  [formGroup]="singUpForms">
+            
+            <label>EMAIL</label>
+            <input   type="email" formControlName="email" name="email" id="">
+            <div style="margin-bottom: 10px;" [hidden]="singUpForms.controls.email.valid||singUpForms.controls.email.untouched" class="">PLEASE WRITE CORRECT EMAIL</div>
+            <label>PASSWORD</label>
+            <input  type="password" #singUpPassword formControlName="password" name="password" id="">
+            <div  style="margin-bottom: 10px;" [hidden]="singUpForms.controls.password.valid||singUpForms.controls.password.untouched" class="">WRITE MORE WORDS</div>
+            <input type="submit"  id="register" class="register" [disabled]="!singUpForms.valid" name="email" value="SING IN" >
+           
+        </form>
+        <button (click)="btnStatus()" class="goToBtn" > GO TO LOGIN</button>
+        </div>
+        <div class="inpBlock" *ngIf="!singStatus">
+            <h1 style="text-align: center">RETURNING CUSTOMER</h1>
+                <form (ngSubmit)="login(loginForms.value)" [formGroup]="loginForms">
+               
+                <label>EMAIL</label>
+                <input id="signUpEmail" type="email" formControlName="email" name="email" id="">
+              
+                <label>PASSWORD</label>
+                <input id="signUpPassword" type="password" formControlName="password" name="password" id="">
+                
+                <input type="submit" id="register" class="register" [disabled]="!loginForms.valid" name="email" value="SING IN" id="">
+                <div *ngIf="loginErr" class="sinInErr"><p>wrong password or email</p></div>
+            </form>
+            <button (click)="btnStatus()"  class="goToBtn" > GO TO REGISTRATIOM</button>
+            </div>
+           
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="conteiner" *ngIf="ordersStaus">
+       
+       <h1 style="text-align: center;">YOUR ORDER</h1>
+        <div  class="one_order" *ngFor="let item of arrUserOrder; let i=index">
+            <div class="orders" *ngFor="let itemS of item.userOrder;">
+                <div class="orders_photo">
+                        <img src="{{itemS.product.img}}" alt="">
+                </div>
+                <div class="orders_describe">
+                    <div class="descriptions">
+                            <h5>{{itemS.product.describe}}</h5>
+                            <p>COLOR:{{itemS.product.color|uppercase}}</p>
+                            <p>SIZE:{{itemS.orderSize|uppercase}}</p>
+                             <p>COUNT:{{itemS.count}}</p>
+                             <p>PRICE:{{itemS.productPrice*itemS.count|number:'2.2-2'}}</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="total_price">
+                <p>{{item.date | date:'dd.LL.y'}}</p>
+                <p>TOTAL PRICE: <span style="color: red"> {{item.totalPrice}}$</span></p></div>
+        </div>
+    
+      
+    
+    </div>
+    <div  *ngIf="!ordersStaus" class="second_conteiner">
+            <h1 > YOU DON`T HAVE ANY ORDERS</h1>
+    </div>
+    
+
+

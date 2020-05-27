@@ -1,0 +1,13 @@
+<div class="admin_main">
+    <div class="rout_admin">
+            <button class="btn_Admin" [routerLink]="[ 'admin-subCategory']">Admin Subcategory</button>
+        <button class="btn_Admin"  [routerLink]="[ 'admin-product']">Admin product</button>
+        <button class="btn_Admin" [routerLink]="[ 'admin-sales']">Admin sales</button>
+        <button class="btn_Admin" [routerLink]="[ 'admin-newCollection']">Admin new collection</button>
+        <button class="btn_Admin" [routerLink]="[ 'admin-orders']">Admin orders</button>
+        
+    </div>
+    <div class="page_admin">
+        <router-outlet></router-outlet>
+    </div>
+</div>

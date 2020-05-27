@@ -1,0 +1,41 @@
+.admin_table_clothes{
+    display: flex;
+    
+    flex-direction: column;
+    
+    }
+    .table_item th{
+        color: black;
+        font-size: 18px;
+        font-weight: 800;
+        width: 8vw;
+        // background-color: red
+    }
+    .table_item{
+        margin: 0 auto;
+        border-bottom: solid black 1px;
+    }
+    .table_item_body{
+        margin: 0 auto;
+    }
+    .table_item_body tr td{
+        text-align: center;
+        width: 8vw;
+    }
+    .admin_Btn{
+        font-size: 20px;
+        margin-top: 5px;
+        border: solid  rgb(31, 30, 30) 1px;
+        border-radius: 4px;
+        width: 80%;
+        height: 40px;
+        color: whitesmoke;
+        background-color: rgb(31, 30, 30);
+    }
+    .danger{
+        border:solid red 4px;
+    }
+    .dangerColor{
+        color: red;
+    }
+    

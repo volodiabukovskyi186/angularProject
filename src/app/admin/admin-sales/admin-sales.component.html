@@ -1,0 +1,35 @@
+<div class="admin_clothes_count">
+  <table class="admin_table_clothes">
+    <thead class="table_item">
+      <th>#</th>
+      <th>Category</th>
+      <th>Type Clothes</th>
+      <th>Price</th>
+      <th>Describe</th>
+      <th>Color</th>
+       <th>New Collect status</th>
+      <th>SALE PROCENT</th>
+      <th>ADD TO SALE</th>
+
+    </thead>
+    <tbody class="table_item_body">
+      <tr *ngFor="let item of adminProduct; let i=index">
+        <td>{{i+1}}</td>
+        <td>{{item.category.nameEN}}</td>
+        <td>{{item.subcategory.subName}}</td>
+        <td>{{item.productPrice}} $</td>
+        <td>{{item.describe| slice:0:10}}</td>
+        <td>{{item.color}}</td>
+        <td [ngClass]="{'dangerColor': item.newCollection==true}">{{item.newCollection}}</td>
+        <td>
+         
+          <input type="number"    [(ngModel)]="item.saleProcent"  name="item.saleProcent" id="">
+        </td>
+        <td>
+          <input type="checkbox" [checked]="item.sale"  (click)="saleSet(item)" id="">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

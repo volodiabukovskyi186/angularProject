@@ -1,0 +1,242 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+i {
+    font-family: fontawesome !important;
+ }
+.conteiner{
+    padding-top: 10px;
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.one_order{
+    margin:0 auto;
+    margin-top: 20px;
+    width: 70vw;
+    border: solid silver 1px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+
+}
+.orders{
+   
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 95%;
+    height: 20vh;
+    border: solid silver 1px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.orders_photo{
+    width: 15%;
+    height: 100%;
+   
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.orders_describe{
+    width: 75%;
+    height: 100%;
+   
+    .descriptions{
+        width: 25vw;
+      
+        height: 100%;
+        h5{
+            font-size: 15px;
+        }
+        p{
+            margin-top: 5px;
+        }
+
+    }
+}
+.second_conteiner{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.total_price{
+    width: 100%;
+    height: 50px;
+    
+    display: flex;
+    justify-content: flex-end;
+    p{
+        font-size: 25px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and(max-width:1200px)and(min-width:980px){
+    .orders_photo{
+        width: 25%;
+        height: 100%;
+       
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    } 
+    .orders_describe{
+        width: 65%;
+        height: 100%;
+       
+    }
+
+}
+@media screen and(max-width:980px)and(min-width:768px){
+    .orders_photo{
+        width: 25%;
+        height: 100%;
+       
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    } 
+    .orders_describe{
+        width: 65%;
+        height: 100%;
+       
+    }
+    .orders{
+        width: 95%;
+        height: 18vh;
+    }
+    .orders_describe{
+        width: 75%;
+        height: 100%;
+        .descriptions{
+            width: 40vw;
+          
+            height: 100%;
+            h5{
+                font-size: 16px;
+            }
+            p{
+                font-size: 13px;
+                margin-top: 5px;
+            }
+    
+        }
+    }
+}
+@media screen and(max-width:768px)and(min-width:480px){
+    .orders_photo{
+        width: 25%;
+        height: 100%;
+       
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    } 
+    .orders_describe{
+        width: 65%;
+        height: 100%;
+       
+    }
+    .orders{
+        width: 95%;
+        height: 18vh;
+    }
+    .orders_describe{
+        width: 75%;
+        height: 100%;
+      
+
+        .descriptions{
+            width: 40vw;
+          
+            height: 100%;
+            h5{
+                font-size: 16px;
+            }
+            p{
+                font-size: 13px;
+                // margin-top: 5px;
+            }
+    
+        }
+    }
+    .total_price{
+        width: 100%;
+        height: 50px;
+        
+        display: flex;
+        justify-content: flex-end;
+        p{
+            font-size: 15px;
+            margin-right: 15px;
+            margin-top: 10px;
+        }
+    }
+}
+@media screen and(max-width:480px)and(min-width:360px){
+    .orders_photo{
+        width: 35%;
+        height: 100%;
+       
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    } 
+    .orders_describe{
+        width: 52%;
+        height: 100%;
+       
+    }
+    .orders{
+        width: 95%;
+        height: 18vh;
+    }
+    .total_price{
+        width: 100%;
+        height: 50px;
+        
+        display: flex;
+        justify-content: flex-end;
+        p{
+            font-size: 11px;
+            margin-right: 15px;
+            margin-top: 10px;
+        }
+    }
+    .orders_describe{
+        width: 75%;
+        height: 100%;
+       
+
+        .descriptions{
+            width: 40vw;
+          
+            height: 100%;
+            h5{
+                font-size: 12px;
+            }
+            p{
+                font-size: 10px;
+                // margin-top: 5px;
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,74 @@
+<div class="conteiner" *ngIf="orderStatus">
+  <div class="inside_conteiner">
+    <div class="orders">
+      <div class="one_order" *ngFor="let item of arrOrders; let i=index">
+        <div class="one_order_inside">
+          <div class="order_img">
+            <img src="{{item.product.img}}" alt="">
+          </div>
+          <div class="order_product_text">
+
+            <h5>{{item.describe}}</h5>
+            <p>COLOR:{{item.product.color|uppercase}}</p>
+            <p>SIZE:{{item.orderSize|uppercase}}</p>
+            <p>COUNT:{{item.count}}</p>
+            <p>PRICE:{{item.productPrice*item.count|number:'1.1-2'}}</p>
+            <p style="font-size: 11px;" class="instok">IN STOCK<br>Leaves warehouse in 1-2 full business days</p>
+          </div>
+          <div class="order_product_last">
+            <i (click)="deleteOrder(item)" class=" fas fa-times"></i>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <form [formGroup]="sing">
+      <div class="buy_product" *ngIf="orderStatus">
+        <div class="buy_product_detalice">
+          <h1 style="text-align: center">ORDER TOTAL: {{totalPrice|number:'1.1-2'}}$</h1>
+          <div class="user_data" *ngIf="!userDataStatus">
+            <p>NAME:</p>
+            <input type="text" formControlName="name" [(ngModel)]="orderName" name="orderName" id="">
+            <p>PHONE NUMBER:</p>
+            <input type="text" prefix="+38" mask="(000)000-00-00" formControlName="phone" [(ngModel)]="orderPhone"
+              name="orderPhone" id="">
+            <div class="grup_city_street">
+              <div>
+                <p>CITY:</p>
+                <input type="text" formControlName="city" [(ngModel)]="orderCity" name="orderCity" id="">
+              </div>
+              <div>
+                <p>STREET:</p>
+                <input type="text" formControlName="street" [(ngModel)]="orderStreet" name="orderStreet" id="">
+              </div>
+              <div>
+                <p>HOUSE:</p>
+                <input type="text" formControlName="house" [(ngModel)]="orderHouse" name="orderHouse" id="">
+              </div>
+            </div>
+            <div class="submit_order">
+              <button class="submit_btn" type="submit" [disabled]="!sing.valid" (click)="submitBuy()">BUY</button>
+            </div>
+          </div>
+          <div class="userBlockLogIn" *ngIf="userDataStatus">
+            <div class="informAbautUser" *ngFor="let item of userInform; let i=index">
+              <h1>NAME: {{item.name|uppercase}}</h1>
+              <p>PHONE NUMBER:{{item.phone}}</p>
+              <p>CITY:{{item.city|uppercase}}</p>
+              <p>STREET:{{item.street|uppercase }}</p>
+              <p>HOUSE:{{item.house|uppercase}}</p>
+            </div>
+            <div class="submit_order">
+              <button class="submit_btn" type="submit" (click)="submitBuy()">BUY</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="sorry" *ngIf="!orderStatus">
+  <h1>SORRY YOU DON`T HAVE ANY ORDERS</h1>
+</div>

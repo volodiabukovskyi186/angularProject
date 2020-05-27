@@ -1,0 +1,176 @@
+*{
+    padding: 0 ;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    
+    
+
+}
+$color_text:rgb(53, 53, 53);
+
+.conteiner{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.block_photo{
+    width: 48%;
+    img{
+        width: 100%;
+        height: 90vh;
+    }
+}
+.block_order{
+    width: 48%;
+    height: 90vh;
+    
+    display: flex;
+    justify-content: center;
+     align-items: center;
+}
+.block_order_add{
+    width: 80%;
+    height: 70vh;
+    
+}
+.block_order_description{
+    color:$color_text;
+    h1{
+       color:$color_text;
+        font-size: 32px;
+        font-weight: 300;
+    }
+    h4{
+        color: red;
+        margin-top: 10px;
+        font-size: 25px;
+        font-weight: 100;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+}
+.order_add{
+    width: 100%;
+    margin-top: 40px;
+ 
+    p{
+        color: rgb(116, 116, 116);
+        font-size: 15px;
+        margin-left: 5px;   
+    }
+}
+.order_size{
+margin-top: 5px;
+    width: 100%;
+  display: flex;
+flex-wrap: wrap;
+  
+
+    .size_btn{
+        color: rgb(116, 116, 116);
+         border-radius: 2px;
+        font-size: 20px;
+        font-weight: 100;
+        margin-left: 5px;
+        margin-top: 5px;
+        width: 9vw;
+        height: 7vh;
+        border: solid  silver 1px;
+       
+       
+    }
+    .sizeBBB:hover{
+        background-color:$color_text;
+        color: whitesmoke;
+    }
+   
+
+
+}
+.active{
+    
+    background-color:$color_text;
+    color: white;
+}
+.add_bag{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+     .add_bag_btn{
+         height: 50px;
+         width: 70%;
+         background-color:  rgb(116, 116, 116);
+         color:  $color_text;
+         border-radius: 3px;
+         color:whitesmoke;
+         font-size: 20px;
+         font-weight: 100;
+     }
+    }
+    .disabledSize{
+        background-color: silver;
+        & :hover{
+            border: silver 1px solid;
+        }
+    }
+ .countProduct{
+     width: 100px;
+     height: 50px;
+     border: solid silver 1px;
+     border-radius: 3px;
+     font-size: 25px;
+     text-align: center;
+     color:  rgb(67, 67, 67);
+ }   
+ .block_price{
+     display: flex;
+     justify-content: flex-start;
+ }
+
+@media screen and(max-width:767px)and(min-width:360px) {
+    .conteiner{
+        flex-direction: column;
+        .block_photo{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 75vw;
+            }
+        }
+        .block_order{
+           
+            width: 100%;
+        }
+        .block_order_description{
+        //  margin:0 auto;
+           text-align: center;
+           
+        }
+     
+        .order_size{
+       
+            justify-content: center;
+            .size_btn{
+                width: 13vw;
+            }
+
+        }
+    }
+    .order_add{
+        p{
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+

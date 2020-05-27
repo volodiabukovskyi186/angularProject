@@ -1,0 +1,549 @@
+*{
+    list-style: none;
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+
+}
+i {
+  font-family: fontawesome !important;
+}
+.conteiner{
+    width: 100%;
+
+}
+.clothing {
+    margin: 10px auto;
+    width: 100%;
+  //  min-height: 150vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+  
+  
+  }
+  
+  .clothing_content {}
+  
+  .clothing_small {
+    width: 78%;
+  
+  }
+  
+  .activeRouter {
+    display: inline-block;
+  
+    width: 20%;
+    height: 30%;
+  }
+  
+  //clothes block=>
+  .clothes_block {
+    width: 30vw;
+    height: 82vh;
+  margin: 10px 10px;
+  border-radius: 3px;
+  color: rgb(116, 116, 116);
+  font-family: 'Open Sans', sans-serif;
+  
+  }
+  
+  .clothes_picture img{
+      width: 100%;
+      height: 73vh;
+  }
+  .clothing_price{
+   
+    display: flex;
+    justify-content: flex-start;
+      color: red;
+     margin-top: 5px;
+      font-size: 17px;
+      font-weight: 100;
+  }
+  
+  
+  .clothing_description{
+    
+
+      font-size: 12px;
+      margin: 5px 5px;
+      display: flex;
+      justify-content: flex-start;
+  }
+  .about_clothing{
+    margin-top:10px;
+}
+  .trans{
+      transition: 5s;
+  }
+
+  .brand_btn {
+  margin-top: 20px;
+  padding-top: 15px;
+  display: block;
+  border: solid silver 1px;
+  color: black;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  transition: 0.5s;
+
+}
+.brand_btn:hover{
+    color: whitesmoke;
+    background-color: black;
+}
+.headPhoto{
+  margin: 0 auto;
+  width: 98%;
+  height: 30vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  h1{
+    display: block;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200;
+  }
+  
+}
+.saleBtn{
+  margin: 0 auto;
+  
+  width: 450px;
+  height: 15vh;
+  display: flex;
+  justify-content: space-around;
+}
+.price_describ{
+  width: 70%;
+ 
+}
+.saleProcent{
+  font-size: 12px;
+  width: 35%;
+  height: 30px;
+height: 10px;
+
+}
+.activeBtn{
+  color: whitesmoke;
+  background-color: black;
+}
+//user Fast buy=>
+.fast_buy_block{
+  display: none;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 4px;
+  position: fixed;
+  z-index: 1000;
+  top: 10%;
+  left: 20%;
+  width: 60%;
+  height:60%;
+  background-color:rgb(235, 230, 230);
+}
+
+.icon{
+  display: flex;
+  justify-content: flex-end;
+
+  width: 100%;
+  height: 30px;
+  i{
+
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+}
+.displayInline{
+  display: inline-block
+}
+//first Block=>
+.order_photo {
+ 
+  width: 45%;
+  height:90% ;
+  img{
+    width: 80%;
+    height: 100%;
+  }
+}
+//second Block=>
+.order{
+ 
+  width: 100%;
+  height: 98%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.order_description{
+  width: 45%;
+  height:90% ;
+  
+  color: rgb(31, 31, 31);
+  h1{
+    font-size: 20px;
+  }
+  p{
+    margin-top: 10px;
+  }
+
+}
+.order_size{
+  margin-top: 20px;
+      width: 100%;
+    display: flex;
+  flex-wrap: wrap;
+    
+  
+      .size_btn{
+          color: rgb(116, 116, 116);
+           border-radius: 2px;
+          font-size: 20px;
+          font-weight: 100;
+          margin-left: 5px;
+          margin-top: 5px;
+          width: 9vw;
+          height: 7vh;
+          border: solid  silver 1px;
+         
+         
+      }
+      .sizeBBB:hover{
+          background-color:rgb(47, 47, 47);
+          color: whitesmoke;
+      }
+     
+  
+  
+  }
+  .active{
+      
+      background-color:rgb(48, 48, 48);
+      color: white;
+  }
+  .disabledSize{
+    background-color: silver;
+    & :hover{
+        border: silver 1px solid;
+    }
+  }
+  .countProduct{
+    text-align: center;
+           color: rgb(116, 116, 116);
+           border-radius: 2px;
+          font-size: 20px;
+          font-weight: 100;
+          margin-left: 5px;
+          margin-top: 5px;
+          width: 5vw;
+          height: 7vh;
+          border: solid  silver 1px;
+}  
+.add_bag_btn{
+  margin-top: 5px;
+  height: 50px;
+  width: 85%;
+  // margin-bottom: 10px;
+  margin-left: 20px;
+  background-color:  rgb(116, 116, 116);
+  border-radius: 3px;
+  color:whitesmoke;
+  font-size: 20px;
+  font-weight: 100;
+
+}
+.count_add{
+  display: flex;
+  justify-content: space-around;
+  width:70%;
+  height: 60px;
+  // background-color: red;
+}
+.cross_price{
+  font-size: 100;
+}
+
+//third Block=>
+.addToBag{
+  width: 29%;
+  height:90% ;
+  border: solid 1px black;
+}
+.sizeActive{
+  color: whitesmoke;
+  background: rgb(31, 31, 31)
+}
+
+.scaleBlock{
+  transform: scale(1.05);
+  transition: .5s all;
+  z-index: 1000;
+}
+.fastBuy{
+  font-size: 18px;
+  margin-left: 20px;
+  margin-top: 15px;
+  font-weight: 100;
+
+  height: 25px;
+  border-bottom: 1px  transparent;
+  
+  cursor: pointer;
+  
+  &:hover{
+    color: #333;
+    border-bottom:#333 1px solid
+  }
+}
+.pice_discrip{
+  width: 65%;
+ 
+}
+
+
+@media screen and(max-width:1200px)and(min-width:980px) {
+  .clothes_block {
+    width: 30vw;
+    height: 65vh;
+    
+}
+.clothes_picture img{
+  width: 100%;
+  height: 57vh;
+  }
+  .fast_buy_block{
+    left: 20%;
+    width: 60%;
+    height:55%;
+  
+  }
+  .order_photo {
+    margin-left: 20px;
+    width: 50%;
+    height:85% ;
+    img{
+      width: 80%;
+      height: 100%;
+    }
+  }
+  .order_size{
+    margin-top: 20px;
+        width: 100%;
+        .size_btn{
+            width: 9vw;
+            height: 7vh;  
+        }
+    }
+    .count_add{
+      width:70%;
+      height: 100px;
+     
+    }
+    .countProduct{
+      width: 6vw;
+      height: 4vh;
+    }
+    .add_bag_btn{
+      width: 100%;
+
+
+    }
+
+}
+
+
+@media screen and(max-width:980px)and(min-width:768px) {
+    .clothes_block {
+        width: 30vw;
+        height: 53vh;
+        
+    }
+    .clothes_picture img{
+      width: 100%;
+      height: 42vh;
+      }
+    .saleProcent{
+     width: 100%;
+     display: flex;
+     align-self: flex-start;
+    }
+    .fastBuy{
+     font-size: 15px;
+    }
+
+
+//fast buy block=>
+.fast_buy_block{
+  left: 20%;
+  width: 60%;
+  height:40%;
+ 
+
+}
+.order_photo {
+  display: flex;
+  justify-content: center;
+  
+  width: 50%;
+  height:85% ;
+  img{
+    width: 80%;
+    height: 85%;
+  }
+}
+.order_size{
+  margin-top: 20px;
+      width: 100%;
+      .size_btn{
+          width: 7vw;
+          height: 5vh;  
+      }
+  }
+  .count_add{
+    width:80%;
+    height: 100px;
+   
+  }
+  .countProduct{
+    width: 6vw;
+    height: 4vh;
+  }
+  .add_bag_btn{
+    width: 100%;
+
+
+  }
+}
+@media screen and(max-width:767px)and(min-width:480px) {
+
+  .clothes_block {
+      width: 44vw;
+      height: 52vh;
+     
+  }
+  .clothes_picture img{
+    width: 100%;
+    height: 40vh;
+    }
+  .about_page_text_block {
+    width: 98%;
+    height: 300px;
+  }
+  .about_page_photo_block {
+    width: 98%;
+  }
+  .about_page{
+    flex-direction: column-reverse;
+  }
+  .filter_menu {
+    height: 800px;
+    background-color: yellow;
+  
+  }
+  .filters{
+    flex-direction: column;
+  }
+
+  .fast_buy_block{
+    display: none;
+  }
+  .fastBuy{
+    display: none;
+
+  }
+ 
+  .saleProcent{
+    width: 70%;
+  
+  }
+  .photo_block{
+    padding-top: 8vh;
+
+    h1{
+      font-size: 35px;
+    }
+    height: 30vh;
+  }
+  saleBtn{
+  
+    
+    width: 350px;
+    height: 15vh;
+  }
+  .btnChoose {
+    width: 350px;
+  }
+ 
+  
+}
+@media screen and(max-width:480px)and(min-width:320px) {
+  .clothes_block {
+      width: 95vw;
+      height: 500px;
+  }
+  .about_page_text_block {
+    width: 98%;
+    height: 300px;
+  }
+  .about_page_photo_block {
+    width: 98%;
+  }
+  .about_page{
+    flex-direction: column-reverse;
+  }
+  .filter_menu {
+  
+    height: 500px;
+
+  }
+  .clothes_block{
+   
+    height: 600px;
+  }
+  .clothes_picture img{
+    height: 500px;
+  }
+  .fast_buy_block{
+    display: none;
+  }
+  .fast_buy_block{
+    display: none;
+  }
+  .fastBuy{
+    display: none;
+
+  }
+  .photo_block{
+    padding-top: 8vh;
+
+    h1{
+      font-size: 25px;
+    }
+    height: 30vh;
+  }
+  .brand_btn {
+
+    width: 150px;
+    height: 50px;
+    font-size: 11px;  
+   
+  }
+ 
+  .saleBtn{
+    width:320px;
+    height: 15vh;
+   
+  }
+}
+
+
+

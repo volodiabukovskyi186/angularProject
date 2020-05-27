@@ -1,0 +1,35 @@
+<div class="conteiner">
+  <div class="block_photo" @mainPhoto>
+    <img src="{{view?.img}}" alt="">
+  </div>
+  <div class="block_order" @mainText>
+    <div class="block_order_add ">
+      <div class="block_order_description">
+        <h1>{{view?.describe|uppercase}}</h1>
+        <div class="block_price">
+        <h4 *ngIf="!view?.sale" >${{view?.productPrice}}</h4>
+        <h4 style="text-decoration: line-through;color:rgb(87, 85, 85)"  *ngIf="view?.sale">price:{{view?.productPrice}}$
+        </h4>
+        <h4 *ngIf="view?.sale" style="color: red; text-decoration:none; padding-left: 5px;">{{view?.productPrice-(view?.productPrice*view?.saleProcent/100)|number:'1.1-2'}}$</h4>
+      </div>
+      <p>COLOR: {{view?.color|uppercase}}</p>
+      </div>
+      <div class="order_add">
+        <p>SIZE</p>
+        <div class="order_size" *ngIf="!stausSizeBlock" >
+          <button class="size_btn" [ngClass]="{ 'active' : isValue == 1 }" (click)="chooseSize('xs')"  [class.sizeBBB]='view?.size.xs' [class.disabledSize]='!view?.size.xs' [disabled]='!view?.size.xs'  >XS</button>
+          <button class="size_btn" [ngClass]="{ 'active' : isValue == 2 }" (click)="chooseSize('s')" [class.sizeBBB]='view?.size.s' [class.disabledSize]='!view?.size.s' [disabled]='!view?.size.s'>S</button>
+          <button class="size_btn" [ngClass]="{ 'active' : isValue == 3 }" (click)="chooseSize('m')" [class.sizeBBB]='view?.size.m' [class.disabledSize]='!view?.size.m'[disabled]='!view?.size.m'>M</button>
+          <button class="size_btn" [ngClass]="{ 'active' : isValue == 4 }" (click)="chooseSize('l')" [class.sizeBBB]='view?.size.l' [class.disabledSize]='!view?.size.l' [disabled]='!view?.size.l'>L</button>
+          <button class="size_btn" [ngClass]="{ 'active' : isValue == 5 }" (click)="chooseSize('xl')" [class.sizeBBB]='view?.size.xl' [class.disabledSize]='!view?.size.xl'[disabled]='!view?.size.xl'>XL</button>
+          <button class="size_btn" [ngClass]="{ 'active' : isValue == 6 }" (click)="chooseSize('xxl')" [class.sizeBBB]='view?.size.xxl' [class.disabledSize]='!view?.size.xxl' [disabled]='!view?.size.xxl'>XXL</button>
+        </div>
+        <div [hidden]="!sizeStatus" style="margin-top: 10px; margin-left:10px; color:red;">CHOOSE SIZE</div>
+        <div class="add_bag">
+          <input class="countProduct" type="number" [(ngModel)]="countProduct" name="countProduct" id="">
+          <button class="add_bag_btn"  (click)="addBag(view)">ADD TO BAG</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+.admin_main{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.rout_admin{
+    width: 19vw;
+
+
+}
+.page_admin{
+    width: 79vw;
+   
+  
+}
+.btn_Admin{
+    width: 99%;
+    height: 50px;
+    background-color: rgb(44, 43, 43);
+    color:white;
+    font-size: 20px;
+    border-radius: 3px;
+    border: solid   rgb(44, 43, 43) 1px;
+    margin: 5px 5px;
+    transition: 0.3s;
+}
+.btn_Admin:hover{
+    background-color: white;
+    border: solid   rgb(44, 43, 43) 1px;
+    color: rgb(44, 43, 43);
+}
