@@ -40,14 +40,8 @@ import { Router, NavigationEnd, Event } from '@angular/router';
       transition('smallWomen=>largeWomen', animate('300ms ease-in'))
     ]),
     trigger('navSubMenu', [
-      // transition('void => *',[
-      //   style({ transform:'translateY(100%)' , opacity: 0 }),
-      //   animate('1000ms ease-in')
-      // ]),
-
-
-      state('close', style({  height: '200px', opacity: 0 })),
-      state('open', style({  height: '500px',  opacity: 1 })),
+      state('close', style({ visibility:'hidden' , opacity: 0 })),
+      state('open', style({ display:'flex',  opacity: 1 })),
       transition('open=>close', animate('300ms ease-in')),
       transition('close=>open', animate('300ms ease-in'))
 
@@ -56,8 +50,14 @@ import { Router, NavigationEnd, Event } from '@angular/router';
       // state('open', style({ transform:'translateY(50%)' ,  opacity: 1 })),
       // transition('open=>close', animate('300ms ease-in')),
       // transition('close=>open', animate('300ms ease-in'))
-    ])
+    ]),
+    trigger('navSubMenuMen', [
+      state('close', style({ visibility:'hidden' , opacity: 0 })),
+      state('open', style({ display:'flex',  opacity: 1 })),
+      transition('open=>close', animate('300ms ease-in')),
+      transition('close=>open', animate('300ms ease-in'))
 
+    ])
 
   ]
 
@@ -69,7 +69,7 @@ export class HeaderComponent implements OnInit {
   mySubMen: string = 'smallP';
   mySubWomen: string = 'smallWomen';
   navSubMenuMen: string = 'close';
-
+  navSubMenuWomen: string = 'close';
   width: any;
   burgerMenuStatus: boolean = false;
   isChangedBlock: boolean = false;
@@ -114,6 +114,8 @@ export class HeaderComponent implements OnInit {
       }
     })
 
+
+  
     // this.authService.singOutStatus.subscribe(data=>{
     //   this.singOutStatus=data;
 

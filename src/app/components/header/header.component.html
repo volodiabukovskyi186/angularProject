@@ -5,8 +5,8 @@
   <div class="navbar">
     <ul>
       <li class="btn_nav" [routerLink]="[ 'home']">HOME</li>
-      <li class="btn_nav"   [routerLink]="['product/men']">MEN
-        <div class="men_sub_menu"  >
+      <li class="btn_nav"   (mouseover)="navSubMenuMen='open'"  (mouseleave)="navSubMenuMen='close'"  [routerLink]="['product/men']">MEN
+        <div class="men_sub_menu" [@navSubMenuMen]="navSubMenuMen"  >
           <ul >
             <h1 style="margin-top: 20px">APPAREL</h1>
             <li *ngFor="let item of SubCateg; let i=index" (click)="subNameCateg(item.subName)"><input
@@ -18,8 +18,8 @@
           </div>
         </div>
       </li>
-      <li class="btn_nav" (mouseover)="navSubMenuMen='open'"  (mouseleave)="navSubMenuMen='close'"   [routerLink]="['product/women']">WOMEN
-        <div class="women_sub_menu" [@navSubMenu]='navSubMenuMen' >
+      <li class="btn_nav" (mouseover)="navSubMenuWomen='open'"  (mouseleave)="navSubMenuWomen='close'"   [routerLink]="['product/women']">WOMEN
+        <div class="women_sub_menu" [@navSubMenu]='navSubMenuWomen' >
        
           <ul   >
             <h1  style="margin-top: 20px">APPAREL</h1>
