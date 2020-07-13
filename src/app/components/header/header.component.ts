@@ -85,9 +85,6 @@ export class HeaderComponent implements OnInit {
   smallMenStatus: boolean = false;
   smallWomenStatus: boolean = false;
 
-
-
-
   constructor(private orderService: OrderService,
     private subCategoryService: SubCategoryService,
     private prodService: ProductService,
@@ -132,6 +129,9 @@ export class HeaderComponent implements OnInit {
 
 
   }
+
+  
+
   navSubMenu(): void {
     this.navSubMenuMen = (this.navSubMenuMen == 'close' ? 'open' : 'close');
     console.log(this.navSubMenuMen)
@@ -153,6 +153,7 @@ export class HeaderComponent implements OnInit {
 
   }
   subNameCateg(subName): void {
+    console.log(subName)
     this.prodService.getSubCategor(subName).subscribe(data => {
 
       this.arrSubCateg = data;
@@ -194,8 +195,6 @@ export class HeaderComponent implements OnInit {
     if (event.currentTarget.innerWidth <= 768) {
       this.burgerMenuStatus = false;
     }
-
-
   }
   sinOut(): void {
     this.authService.logOut();
@@ -213,21 +212,16 @@ export class HeaderComponent implements OnInit {
     // (this.mySubMen=='small' ?this.mySubMen='large' :this.mySubMen='small')
     if (this.mySubMen == 'smallP') {
       this.mySubMen = 'largeP'
-
-
     }
     else {
       this.mySubMen = 'smallP'
     }
 
-
     (this.smallMenStatus == false ? this.smallMenStatus = true : this.smallMenStatus = false)
-
 
   }
   smallWomen(): void {
     (this.mySubWomen == 'smallWomen' ? this.mySubWomen = 'largeWomen' : this.mySubWomen = 'smallWomen');
-
     this.smallMenStatus = false;
     (this.smallWomenStatus == false ? this.smallWomenStatus = true : this.smallWomenStatus = false)
 

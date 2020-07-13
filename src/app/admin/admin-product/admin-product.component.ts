@@ -139,6 +139,7 @@ uploadProgress: Observable<number>;
     this.prodService.deleteProduct(product).subscribe(() => {
       this.getProduct();
     })
+   
 
   }
 

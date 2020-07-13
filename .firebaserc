@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "shoplifter-c9dbe": {
+      "hosting": {
+        "project": [
+          "shoplifter-c9dbe"
+        ]
+      }
+    }
+  }
+}

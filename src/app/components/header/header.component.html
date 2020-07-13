@@ -4,8 +4,8 @@
   </div>
   <div class="navbar">
     <ul>
-      <li class="btn_nav" [routerLink]="[ 'home']">HOME</li>
-      <li class="btn_nav"   (mouseover)="navSubMenuMen='open'"  (mouseleave)="navSubMenuMen='close'"  [routerLink]="['product/men']">MEN
+      <li class="btn_nav" [routerLink]="[ 'home']" routerLinkActive="active_router">HOME</li>
+      <li class="btn_nav"   (mouseover)="navSubMenuMen='open'"   (mouseleave)="navSubMenuMen='close'"   routerLinkActive="active_router" [routerLink]="['product/men']">MEN
         <div class="men_sub_menu" [@navSubMenuMen]="navSubMenuMen"  >
           <ul >
             <h1 style="margin-top: 20px">APPAREL</h1>
@@ -18,7 +18,7 @@
           </div>
         </div>
       </li>
-      <li class="btn_nav" (mouseover)="navSubMenuWomen='open'"  (mouseleave)="navSubMenuWomen='close'"   [routerLink]="['product/women']">WOMEN
+      <li class="btn_nav" (mouseover)="navSubMenuWomen='open'"  (mouseleave)="navSubMenuWomen='close'"  routerLinkActive="active_router"   [routerLink]="['product/women']">WOMEN
         <div class="women_sub_menu" [@navSubMenu]='navSubMenuWomen' >
        
           <ul   >
@@ -34,8 +34,8 @@
         </div>
       </li>
 
-      <li class="btn_nav" [routerLink]="['newCollection']">NEW COLLECTION</li>
-      <li class="btn_nav" [routerLink]="[ 'sales']">SALE</li>
+      <li class="btn_nav" [routerLink]="['newCollection']"  routerLinkActive="active_router">NEW COLLECTION</li>
+      <li class="btn_nav" [routerLink]="[ 'sales']"  routerLinkActive="active_router">SALE</li>
     </ul>
   </div>
 
@@ -60,11 +60,11 @@
   </div>
 
   <div class="small_singing" >
-    <button class="singIn_block" *ngIf="!singOutStatus" [routerLink]="[checkLoginPage]">
+    <button class="singIn_block" *ngIf="!singOutStatus"  routerLinkActive="active_router" [routerLink]="[checkLoginPage]">
       <i class="iconColor mr5 far fa-user"></i>
       <p>SING IN</p>
     </button>
-    <button *ngIf="singOutStatus" class="myProfile" [routerLink]="['/'+checkLoginPage]">
+    <button *ngIf="singOutStatus" class="myProfile"  routerLinkActive="active_router" [routerLink]="['/'+checkLoginPage]">
       <i class="iconColor mr5 far fa-user"></i>
       <p>MY PROFILE</p>
     </button>
@@ -79,23 +79,21 @@
       <p>SING OUT</p>
     </button>
 
-    <!-- *ngIf="burgerMenuStatus" -->
-      <!-- <h1 style="margin-top: 15px">APPAREL</h1> -->
-       <!-- <h1 style="margin-top: 20px">APPAREL</h1> -->
+    
     <div  style="margin-bottom: 5px ;margin-left: 5px" >
       <ul>
         <li >
           <i *ngIf="!burgerMenuStatus" (click)="barMenu()" class="iconColor   small_bar fas fa-bars"></i>
           <i *ngIf="burgerMenuStatus" (click)="barMenu()" class="iconColor   small_bar fas fa-times"></i>
           <ul    [@smallbar]='myAnimatiom'  class="main_small_bar"   >
-              <!-- *ngIf="!burgerMenuStatus" -->
+            
             <li  (click)="smallMenWomen()"  [routerLink]="[ 'home']">
               <p  [@smallBarText]='myAnimatiom' >HOME</p>
             </li>
             <li  (click)="smallMen()">
               <p [@smallBarText]='myAnimatiom'>MEN</p>
               <div [@menSubMenu]='mySubMen'     class="small_main_sub" >
-                  <!-- *ngIf="smallMenStatus"  -->
+                 
                 <ul   >
                 
                   <li *ngFor="let item of SubCateg; let i=index">
@@ -109,7 +107,7 @@
             <li  (click)="smallWomen()">
               <p [@smallBarText]='myAnimatiom'>WOMEN</p>
               <div class="small_main_sub" [@womenSubMenu]='mySubWomen'>
-                  <!-- *ngIf="smallWomenStatus"  -->
+               
                 <ul>
                  
                   <li *ngFor="let item of SubCateg; let i=index" (click)="subNameCateg(item.subName)"><input

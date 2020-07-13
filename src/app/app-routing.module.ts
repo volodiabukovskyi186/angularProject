@@ -52,7 +52,7 @@ const routes: Routes = [
     {path: 'admin-subCategory', component: AdminSubCategoryComponent},
   ]},
   
-  // {path: 'home', pathMatch: 'full', redirectTo: 'home'},
+  {path: '', pathMatch: 'full', redirectTo: 'home'},
 
 
 ];

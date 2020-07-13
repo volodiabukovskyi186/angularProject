@@ -65,14 +65,14 @@
               price:{{item.productPrice}}$
             </p>
             <p *ngIf="item.sale" style="color: red; text-decoration:none; padding-left: 5px;">
-              {{item.productPrice-(item.productPrice*item.saleProcent/100)|number:'2.2-3'}}$</p>
+              {{item.productPrice-(item.productPrice*item.saleProcent/100)|number:'2.1-2'}}$</p>
 
           </div>
           <div class="saleProcent" *ngIf="item.sale">
               <p>SALE: <span style="color: red">{{item.saleProcent}}%</span></p>
             </div>
           <div class="about_clothing">
-            <p>{{item.describe|slice:0:60}}</p>
+            <p>{{item.describe|slice:0:30}}</p>
           </div>
           
         </div>
@@ -99,7 +99,7 @@
     <div  class="order_description">
         <h1>{{view?.describe|uppercase}}</h1>
       <div  style="display: flex;justify-content:flex-start;font-weight: 100;">
-        <h3  *ngIf="!view?.sale" style="font-weight: 100; margin-top: 10px;" class="cross_price" >Price:{{view?.productPrice}}$</h3>
+        <h3  *ngIf="!view?.sale" style=" color:red;font-weight: 100; margin-top: 10px;" class="cross_price" >Price:{{view?.productPrice}}$</h3>
         <h4 style="text-decoration: line-through;color:rgb(87, 85, 85); font-weight: 100;"  *ngIf="view?.sale">price:{{view?.productPrice}}$
         </h4>
         <h4 *ngIf="view?.sale" style="color: red; text-decoration:none; padding-left: 5px; font-weight: 100;">{{view?.productPrice-(view?.productPrice*view?.saleProcent/100)|number:'1.1-2'}}$</h4>

@@ -17,7 +17,7 @@
     </div>
     <div class="inp_block">
       <p>Price </p>
-      <input type="text" [(ngModel)]="productPrice" class="inp_admin_text"  name="productPrice" id="">
+      <input type="number" [(ngModel)]="productPrice" class="inp_admin_text"  name="productPrice" id="">
     </div>
     <div class="inp_block">
       <p>Describe</p>
@@ -44,7 +44,7 @@
     </div>
     <div class="inp_block">
       <p>Images</p>
-      <input (change)="uploadFile($event)" type="file" class="inp_admin_text"  [(ngModel)]="productImg"  name="productImg" id="">
+      <input (change)="uploadFile($event)" type="file" class="inp_admin_text" id="">
     </div>
     <div class="progres">
       <div class="green" role="progressbar" [style.width]="(uploadProgress | async) + '%'" aria-valuemin="0" aria-valuemax="100"></div>

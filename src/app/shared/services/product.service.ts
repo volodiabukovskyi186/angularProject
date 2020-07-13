@@ -12,7 +12,7 @@ export class ProductService {
   dataSub$: Observable<any>
   subCategor: Subject<any> = new Subject<any>();
   arrChoose: Array<IProduct> = [];
-
+  newSabCategor: Subject<any> = new Subject<any>();
 
   constructor(private http: HttpClient) {
     this.url = 'http://localhost:3000/product'
@@ -20,7 +20,6 @@ export class ProductService {
   }
   dataSubCategory(data) {
     this.subCategor.next(data);
-
   }
 
 

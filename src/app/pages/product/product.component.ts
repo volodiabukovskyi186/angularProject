@@ -23,20 +23,20 @@ import { OrderService } from 'src/app/shared/services/order.service';
       transition('large=>small', animate('300ms ease-in'))
     ]),
     trigger('fade2', [
-      state('small', style({  height: '0px', opacity: 0 })),
+      state('small', style({ height: '0px', opacity: 0 })),
       state('large', style({ height: '*', opacity: 1 })),
       transition('small=>large', animate('500ms ease-in')),
       transition('large=>small', animate('500ms ease-in'))
     ]),
     trigger('product_picture', [
-      transition('void => *',[
-        style({ transform:'translateX(100%)' , opacity: 0 }),
+      transition('void => *', [
+        style({ transform: 'translateX(100%)', opacity: 0 }),
         animate('1000ms ease-in')
       ]),
     ]),
     trigger('product_text', [
-      transition('void => *',[
-        style({ transform:'translateX(-100%)' , opacity: 0 }),
+      transition('void => *', [
+        style({ transform: 'translateX(-100%)', opacity: 0 }),
         animate('1000ms ease-in')
       ]),
     ])
@@ -63,9 +63,9 @@ export class ProductComponent implements OnInit {
 
   masSizeBollean: Array<boolean> = [];
   stausSizeBlock: boolean = false;
-  
-  screenWidthStatus:boolean=false;
-  pictureAnimate:string;
+
+  screenWidthStatus: boolean = false;
+  pictureAnimate: string;
 
   arrProducts: Array<IProduct> = [];
   arrColors: Array<IColor> = [
@@ -177,10 +177,11 @@ export class ProductComponent implements OnInit {
     this.router.events.subscribe((event: Event) => {
 
       if (event instanceof NavigationEnd) {
-        this.pictureAnimate='enter';
+        this.pictureAnimate = 'enter';
         this.countProduct = 9;
         const categoryName = this.activateRoute.snapshot.paramMap.get('category');
         this.getProducts(categoryName);
+
         if (categoryName == 'women') {
           this.categoryImgStatus = false;
         } else {
@@ -206,6 +207,7 @@ export class ProductComponent implements OnInit {
   }
   private getProducts(categoryName?: string): void {
     categoryName = categoryName || this.activateRoute.snapshot.paramMap.get('category');
+
     this.prodService.getProduct(categoryName, this.countProduct).subscribe(
       data => {
         this.arrProducts = data;
@@ -251,6 +253,9 @@ export class ProductComponent implements OnInit {
       this.arrProducts = data;
       console.log(this.arrProducts, this.masColors);
     });
+    if(this.masColors.length<=0){
+      this.getProducts();
+    }
 
   }
   priceFilter(): void {
@@ -261,23 +266,26 @@ export class ProductComponent implements OnInit {
     }))
   }
   sizeFilter(val): void {
-   
-    this.arrSizeFilter.forEach(elem=>{
-      elem.status=false
+
+    this.arrSizeFilter.forEach(elem => {
+      elem.status = false
     })
     val.status = true;
-    let size=val.size
+    let size = val.size
 
-    this.prodService.getSizeFilter(this.namePage,size).subscribe(data => {
+    this.prodService.getSizeFilter(this.namePage, size).subscribe(data => {
       this.arrProducts = data;
       console.log(this.arrProducts);
     });
+    if (this.arrProducts.length == 0) {
+      this.getProducts();
+    }
 
   }
   onResize(event) {
     // console.log(event.currentTarget.innerWidth)
     if (event.currentTarget.innerWidth <= 768) {
-    this.screenWidthStatus=true;
+      this.screenWidthStatus = true;
     }
 
   }

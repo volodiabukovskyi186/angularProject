@@ -25,8 +25,8 @@ export class AdminOrdersComponent implements OnInit {
     
   }
   deleteOrder(order:any):void{
-    debugger;
-    console.log(order.id)
+  
+    console.log(order)
     this.orderAdminService.deleteOrders(order).subscribe(()=>{
       this.getAdminOrders()
     })

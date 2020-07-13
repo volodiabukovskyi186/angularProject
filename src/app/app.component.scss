@@ -1,6 +1,12 @@
 // @import url(fonts.css);
 main{
-    // margin-top: 10vh;
+    padding-top: 60px;
+}
+#header{
+    z-index: 10000;
+    width: 100%;
+    margin-bottom: 80px;
+    position: fixed;
 }
 
 
